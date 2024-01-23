@@ -5,7 +5,6 @@ import unocss from '@unocss/vite'
 import VueDevtools from 'vite-plugin-vue-devtools'
 import pageRoute from '@soybeanjs/vite-plugin-vue-page-route'
 
-import mock from './mock'
 import unplugin from './unplugin'
 
 /**
@@ -22,8 +21,7 @@ export function setupVitePlugins(viteEnv: ImportMetaEnv): (PluginOption | Plugin
     vueJsx(),
     VueDevtools(),
     ...unplugin(viteEnv),
-    unocss(),
-    mock(viteEnv)
+    unocss()
   ]
 
   if (viteEnv.VITE_APP_ROUTE_PLUGIN === 'Y') {
