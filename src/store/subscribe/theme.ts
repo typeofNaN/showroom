@@ -114,6 +114,6 @@ function addThemeCssVarsToHtml(themeVars: ThemeVars) {
       }
     }
   })
-  const styleStr = style.join('')
+  const styleStr = style.join(';')
   document.documentElement.style.cssText += styleStr
 }
