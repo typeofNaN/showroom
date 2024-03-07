@@ -1,13 +1,11 @@
 <template>
   <div class="h-full">
-    <n-card :bordered="false" class="h-full rounded-8px shadow-sm bg-#9af0f3">
-      <div class="h-full container-box">
-        <div class="white-circle" />
-        <div class="h-full canvas-box">
-          <canvas ref="canvasRef" />
-        </div>
+    <div class="h-full bg-#9af0f3 rounded-8px container-box">
+      <div class="white-circle" />
+      <div class="h-full relative">
+        <canvas ref="canvasRef" />
       </div>
-    </n-card>
+    </div>
   </div>
 </template>
 
@@ -32,27 +30,31 @@ onMounted(() => {
     if (thick < 6 && Math.random() < 0.3) {
       return
     }
-    if (thick < 2) {
+
+    if (thick < 1.5) {
       ctx.beginPath()
-      ctx.arc(v0[0], v0[1], Math.random() * 8, 0, 2 * Math.PI)
-      ctx.fillStyle = Math.random() < 0.5 ? 'yellow' : 'red'
+      ctx.arc(v0[0], v0[1], Math.random() * 6, 0, 2 * Math.PI)
+      ctx.fillStyle = 'pink'
       ctx.fill()
       return
     }
-    ctx.beginPath()
-    ctx.moveTo(v0[0], v0[1])
+
     const v1 = [
       v0[0] + length * Math.cos((dir * Math.PI) / 180),
       v0[1] + length * Math.sin((dir * Math.PI) / 180)
     ]
+
+    ctx.beginPath()
+    ctx.moveTo(v0[0], v0[1])
+
     ctx.lineTo(v1[0], v1[1])
     ctx.strokeStyle = '#333'
     ctx.lineCap = 'round'
     ctx.lineWidth = thick
     ctx.stroke()
 
-    drawBranch(v1, thick * 0.82, length * 0.8, dir + Math.random() * 30)
-    drawBranch(v1, thick * 0.82, length * 0.8, dir - Math.random() * 30)
+    drawBranch(v1, thick * 0.8, length * 0.8, dir + Math.random() * 36)
+    drawBranch(v1, thick * 0.8, length * 0.8, dir - Math.random() * 36)
   }
 })
 </script>
@@ -72,12 +74,6 @@ onMounted(() => {
     height: 800px;
     border-radius: 50%;
     background-color: #fff;
-    z-index: 0;
-  }
-
-  .canvas-box {
-    position: relative;
-    z-index: 1;
   }
 }
 </style>

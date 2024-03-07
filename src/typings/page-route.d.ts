@@ -3,13 +3,13 @@ declare namespace PageRoute {
    * the root route key
    * @translate 根路由
    */
-  type RootRouteKey = 'root'
+  type RootRouteKey = 'root';
 
   /**
    * the not found route, which catch the invalid route path
    * @translate 未找到路由(捕获无效路径的路由)
    */
-  type NotFoundRouteKey = 'not-found'
+  type NotFoundRouteKey = 'not-found';
 
   /**
    * the route key
@@ -22,9 +22,9 @@ declare namespace PageRoute {
     | 'constant-page'
     | 'login'
     | 'not-found'
-    | 'dashboard'
     | 'canvas'
     | 'canvas_draw-tree'
+    | 'dashboard';
 
   /**
    * last degree route key, which has the page file
@@ -32,13 +32,6 @@ declare namespace PageRoute {
    */
   type LastDegreeRouteKey = Extract<
     RouteKey,
-    | '403'
-    | '404'
-    | '500'
-    | 'constant-page'
-    | 'login'
-    | 'not-found'
-    | 'dashboard'
-    | 'canvas_draw-tree'
-  >
+    '403' | '404' | '500' | 'constant-page' | 'login' | 'not-found' | 'canvas_draw-tree' | 'dashboard'
+  >;
 }

@@ -1,6 +1,6 @@
 <template>
   <dark-mode-container class="flex-center h-full" :inverted="theme.footer.inverted">
-    <span>Copyright ©2024</span>
+    <span>©2024</span>
   </dark-mode-container>
 </template>
 
