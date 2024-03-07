@@ -21,6 +21,10 @@ const locale: I18nType.Schema = {
       analysis: '分析页',
       workbench: '工作台'
     },
+    canvas: {
+      _value: 'Canvas画布',
+      drawTree: '画一棵树'
+    },
     document: {
       _value: '文档',
       vue: 'Vue文档',

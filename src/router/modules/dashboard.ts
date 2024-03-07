@@ -1,4 +1,4 @@
-const dashboard: AuthRoute.Route = {
+const dashboardRoute: AuthRoute.Route = {
   name: 'dashboard',
   path: '/dashboard',
   component: 'self',
@@ -7,9 +7,10 @@ const dashboard: AuthRoute.Route = {
     i18nTitle: 'routes.dashboard._value',
     keepAlive: true,
     singleLayout: 'basic',
-    icon: 'fluent:book-information-24-regular',
+    // icon: 'fluent:book-information-24-regular',
+    localIcon: 'dashboard',
     order: 1
   }
 }
 
-export default dashboard
+export default dashboardRoute

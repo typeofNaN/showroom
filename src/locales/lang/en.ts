@@ -21,6 +21,10 @@ const locale: I18nType.Schema = {
       analysis: 'Analysis',
       workbench: 'Workbench'
     },
+    canvas: {
+      _value: 'Canvas',
+      drawTree: 'Draw Tree'
+    },
     document: {
       _value: 'Document',
       vue: 'Vue Document',

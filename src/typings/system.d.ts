@@ -329,6 +329,10 @@ declare namespace I18nType {
         analysis: string
         workbench: string
       }
+      canvas: {
+        _value: string
+        drawTree: string
+      }
       document: {
         _value: string
         vue: string
