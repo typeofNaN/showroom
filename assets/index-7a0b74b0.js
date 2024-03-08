@@ -1,0 +1,1 @@
+import{_ as o}from"./plugin-vueexport-helper-c27b6911.js";import{be as n,bj as c}from"./index-effc5d02.js";import{_ as r}from"./Space-f9a94717.js";const t={};function _(s,a){const e=r;return n(),c(e,{vertical:!0,size:16})}const f=o(t,[["render",_]]);export{f as default};
