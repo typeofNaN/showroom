@@ -1,18 +1,16 @@
 <template>
-  <div class="emojis h-full">
-    <n-row gutter="12">
-      <n-col v-for="i in emojisList" :span="4" :key="i.name" class="mb-12px">
-        <n-card :bordered="false" class="h-full rounded-8px shadow-sm">
-          <div class="emojis-box">
-            <div class="emojis-img">
-              <n-image width="40" :src="i.url" lazy />
-            </div>
-            <div class="name">{{ i.name }}</div>
+  <n-space vertical :size="16">
+    <n-row :gutter="[10, 10]">
+      <n-col v-for="i in emojisList" :span="4" :key="i.name">
+        <n-card :bordered="false" class="rounded-8px shadow-sm">
+          <div class="flex items-center">
+            <n-image width="40" :src="i.url" lazy class="mr-10px" />
+            <span>{{ i.name }}</span>
           </div>
         </n-card>
       </n-col>
     </n-row>
-  </div>
+  </n-space>
 </template>
 
 <script lang="ts" setup>
@@ -47,20 +45,3 @@ async function getGithubEmojisList() {
     })
 }
 </script>
-
-<style lang="scss" scoped>
-.emojis {
-  overflow-y: auto;
-
-  .emojis-box {
-    display: flex;
-    align-items: center;
-
-    .emojis-img {
-      margin-right: 10px;
-      width: 40px;
-      height: 40px;
-    }
-  }
-}
-</style>
