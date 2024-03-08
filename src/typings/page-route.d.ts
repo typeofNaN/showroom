@@ -25,7 +25,9 @@ declare namespace PageRoute {
     | 'canvas'
     | 'canvas_code-rain'
     | 'canvas_draw-tree'
-    | 'dashboard';
+    | 'dashboard'
+    | 'github'
+    | 'github_emojis';
 
   /**
    * last degree route key, which has the page file
@@ -42,5 +44,6 @@ declare namespace PageRoute {
     | 'canvas_code-rain'
     | 'canvas_draw-tree'
     | 'dashboard'
+    | 'github_emojis'
   >;
 }

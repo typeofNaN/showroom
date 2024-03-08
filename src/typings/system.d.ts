@@ -334,6 +334,10 @@ declare namespace I18nType {
         drawTree: string
         codeRain: string
       }
+      github: {
+        _value: string
+        emojis: string
+      }
       document: {
         _value: string
         vue: string

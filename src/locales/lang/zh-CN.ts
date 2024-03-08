@@ -26,6 +26,10 @@ const locale: I18nType.Schema = {
       drawTree: '画一棵树',
       codeRain: '代码雨'
     },
+    github: {
+      _value: 'Github',
+      emojis: 'Github Emojis'
+    },
     document: {
       _value: '文档',
       vue: 'Vue文档',
