@@ -1,0 +1,1 @@
+import{_ as t}from"./plugin-vueexport-helper-c27b6911.js";import{be as o,bj as c,bk as n,bq as r}from"./index-4202d234.js";import{_}from"./Space-1d451aa8.js";const s={};function a(i,p){const e=_;return o(),c(e,{vertical:!0,size:16},{default:n(()=>[r("hello")]),_:1})}const u=t(s,[["render",a]]);export{u as default};
