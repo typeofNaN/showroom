@@ -23,6 +23,7 @@ declare namespace PageRoute {
     | 'login'
     | 'not-found'
     | 'canvas'
+    | 'canvas_code-rain'
     | 'canvas_draw-tree'
     | 'dashboard';
 
@@ -32,6 +33,14 @@ declare namespace PageRoute {
    */
   type LastDegreeRouteKey = Extract<
     RouteKey,
-    '403' | '404' | '500' | 'constant-page' | 'login' | 'not-found' | 'canvas_draw-tree' | 'dashboard'
+    | '403'
+    | '404'
+    | '500'
+    | 'constant-page'
+    | 'login'
+    | 'not-found'
+    | 'canvas_code-rain'
+    | 'canvas_draw-tree'
+    | 'dashboard'
   >;
 }

@@ -10,6 +10,7 @@ export const views: Record<
   'constant-page': () => import('./_builtin/constant-page/index.vue'),
   login: () => import('./_builtin/login/index.vue'),
   'not-found': () => import('./_builtin/not-found/index.vue'),
+  'canvas_code-rain': () => import('./canvas/code-rain/index.vue'),
   'canvas_draw-tree': () => import('./canvas/draw-tree/index.vue'),
   dashboard: () => import('./dashboard/index.vue')
 };

@@ -23,7 +23,8 @@ const locale: I18nType.Schema = {
     },
     canvas: {
       _value: 'Canvas',
-      drawTree: 'Draw Tree'
+      drawTree: 'Draw Tree',
+      codeRain: 'Code Rain'
     },
     document: {
       _value: 'Document',

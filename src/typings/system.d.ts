@@ -332,6 +332,7 @@ declare namespace I18nType {
       canvas: {
         _value: string
         drawTree: string
+        codeRain: string
       }
       document: {
         _value: string

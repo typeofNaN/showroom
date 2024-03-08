@@ -5,7 +5,7 @@ const canvasRoute: AuthRoute.Route = {
   meta: {
     title: 'Canvas',
     i18nTitle: 'routes.canvas._value',
-    keepAlive: true,
+    keepAlive: false,
     localIcon: 'canvas',
     order: 2
   },
@@ -16,8 +16,20 @@ const canvasRoute: AuthRoute.Route = {
       component: 'self',
       meta: {
         title: '画一颗树',
-        keepAlive: true,
+        i18nTitle: 'routes.canvas.drawTree',
+        keepAlive: false,
         localIcon: 'tree'
+      }
+    },
+    {
+      name: 'canvas_code-rain',
+      path: '/canvas/code-rain',
+      component: 'self',
+      meta: {
+        title: '代码雨',
+        i18nTitle: 'routes.canvas.codeRain',
+        keepAlive: false,
+        localIcon: 'code-rain'
       }
     }
   ]
