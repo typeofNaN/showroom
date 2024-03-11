@@ -322,6 +322,9 @@ declare namespace I18nType {
       cancel: string
       pleaseCheckValue: string
       action: string
+      search: string
+      pleaseInputSearchValue: string
+      noData: string
     }
     routes: {
       dashboard: {
