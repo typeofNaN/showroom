@@ -4,7 +4,7 @@ import { defineStore } from 'pinia'
 import { useRouterPush } from '@/composables'
 import { $t } from '@/locales'
 import { router } from '@/router'
-import { fetchLogin, fetchUserInfo } from '@/service'
+import { AuthApi } from '@/service'
 import { localStg } from '@/utils'
 import { useTabStore } from '../tab'
 import { useRouteStore } from '../route'
@@ -95,7 +95,7 @@ export const useAuthStore = defineStore('auth-store', {
       localStg.set('refreshToken', refreshToken)
 
       // 获取用户信息
-      const { data } = await fetchUserInfo()
+      const { data } = await AuthApi.fetchUserInfo()
       if (data) {
         // 成功后把用户信息存储到缓存中
         localStg.set('userInfo', data)
@@ -116,7 +116,7 @@ export const useAuthStore = defineStore('auth-store', {
      */
     async login(userName: string, password: string) {
       this.loginLoading = true
-      const { data } = await fetchLogin(userName, password)
+      const { data } = await AuthApi.fetchLogin(userName, password)
       if (data) {
         await this.handleActionAfterLogin(data)
       }
@@ -144,7 +144,7 @@ export const useAuthStore = defineStore('auth-store', {
         }
       }
       const { userName, password } = accounts[userRole]
-      const { data } = await fetchLogin(userName, password)
+      const { data } = await AuthApi.fetchLogin(userName, password)
       if (data) {
         await this.loginByToken(data)
         resetRouteStore()

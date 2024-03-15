@@ -1,6 +1,6 @@
 import { nextTick } from 'vue'
 
-import useBoolean from './use-boolean'
+import useBoolean from './useBoolean'
 
 /** 重载 */
 export default function useReload() {

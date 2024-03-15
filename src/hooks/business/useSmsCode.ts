@@ -1,13 +1,13 @@
 import { computed } from 'vue'
 
 import { REGEXP_PHONE } from '@/config'
-import { fetchSmsCode } from '@/service'
+import { AuthApi } from '@/service'
 import { useLoading } from '../common'
-import useCountDown from './use-count-down'
+import useCountdown from './useCountdown'
 
 export default function useSmsCode() {
   const { loading, startLoading, endLoading } = useLoading()
-  const { counts, start, isCounting } = useCountDown(60)
+  const { counts, start, isCounting } = useCountdown(60)
 
   const initLabel = '获取验证码'
   const countingLabel = (second: number) => `${second}秒后重新获取`
@@ -48,7 +48,7 @@ export default function useSmsCode() {
     }
 
     startLoading()
-    const { data } = await fetchSmsCode(phone)
+    const { data } = await AuthApi.fetchSmsCode(phone)
     if (data) {
       window.$message?.success('验证码发送成功！')
       start()

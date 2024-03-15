@@ -325,6 +325,11 @@ declare namespace I18nType {
       search: string
       pleaseInputSearchValue: string
       noData: string
+      copy: {
+        browserNotSupportedCopy: string
+        copySuccess: string
+        copyFail: string
+      }
     }
     routes: {
       dashboard: {

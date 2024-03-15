@@ -16,7 +16,12 @@ const locale: I18nType.Schema = {
     action: '操作',
     search: '搜索',
     pleaseInputSearchValue: '请输入搜索项',
-    noData: '无数据'
+    noData: '无数据',
+    copy: {
+      browserNotSupportedCopy: '您的浏览器不支持复制功能，请更换浏览器后重试！',
+      copySuccess: '复制成功！',
+      copyFail: '复制失败！'
+    }
   },
   routes: {
     dashboard: {

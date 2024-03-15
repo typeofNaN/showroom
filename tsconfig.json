@@ -15,8 +15,8 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "~/*": ["./*"]
     },
     "types": ["vite/client", "node", "unplugin-icons/types/vue", "naive-ui/volar"]
   },

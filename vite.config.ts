@@ -24,8 +24,8 @@ export default defineConfig(configEnv => {
     base: viteEnv.VITE_BASE_URL,
     resolve: {
       alias: {
-        '~': rootPath,
-        '@': srcPath
+        '@': srcPath,
+        '~': rootPath
       }
     },
     plugins: setupVitePlugins(viteEnv),

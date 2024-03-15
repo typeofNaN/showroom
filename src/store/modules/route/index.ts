@@ -6,7 +6,7 @@ import {
   router,
   routes as staticRoutes
 } from '@/router'
-import { fetchUserRoutes } from '@/service'
+import { AuthApi } from '@/service'
 import {
   filterAuthRoutesByUserPermission,
   getCacheRoutes,
@@ -123,7 +123,7 @@ export const useRouteStore = defineStore('route-store', {
         throw new Error('userId 不能为空!')
       }
 
-      const { error, data } = await fetchUserRoutes(userId)
+      const { error, data } = await AuthApi.fetchUserRoutes(userId)
 
       if (!error) {
         this.handleAuthRoute(sortRoutes(data.routes))

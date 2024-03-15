@@ -2,7 +2,7 @@ import type { AxiosRequestConfig } from 'axios'
 
 import { useAuthStore } from '@/store'
 import { localStg } from '@/utils'
-import { fetchUpdateToken } from '../api'
+import { AuthApi } from '../api'
 
 /**
  * @description 刷新token
@@ -11,7 +11,7 @@ import { fetchUpdateToken } from '../api'
 export async function handleRefreshToken(axiosConfig: AxiosRequestConfig) {
   const { resetAuthStore } = useAuthStore()
   const refreshToken = localStg.get('refreshToken') || ''
-  const { data } = await fetchUpdateToken(refreshToken)
+  const { data } = await AuthApi.fetchUpdateToken(refreshToken)
   if (data) {
     localStg.set('token', data.token)
     localStg.set('refreshToken', data.refreshToken)

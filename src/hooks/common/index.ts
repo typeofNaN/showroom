@@ -1,12 +1,14 @@
-import useBoolean from './use-boolean'
-import useContext from './use-context'
-import useLoading from './use-loading'
-import useLoadingEmpty from './use-loading-empty'
-import useReload from './use-reload'
+import useBoolean from './useBoolean'
+import useContext from './useContext'
+import useClipboard from './useClipboard'
+import useLoading from './useLoading'
+import useLoadingEmpty from './useLoadingEmpty'
+import useReload from './useReload'
 
 export {
   useBoolean,
   useContext,
+  useClipboard,
   useLoading,
   useLoadingEmpty,
   useReload

@@ -11,7 +11,7 @@
     <n-row v-if="emojisList.length > 0" :gutter="[10, 10]">
       <n-col v-for="i in emojisList" :span="4" :key="i.name">
         <n-card :bordered="false" hoverable class="rounded-8px shadow-sm">
-          <div class="flex items-center h-40px">
+          <div class="flex items-center h-40px cursor-copy" @click="copy(i.name)">
             <n-image :src="i.url" lazy width="40" class="mr-10px" />
             <span>{{ i.name }}</span>
           </div>
@@ -30,12 +30,16 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue'
 
+import { useClipboard } from '@/hooks'
 import { $t } from '@/locales'
+import { GithubApi } from '@/service'
 
 type Emojis = {
   name: string
   url: string
 }
+
+const { copyText } = useClipboard()
 
 const inputValue = ref<string>('')
 
@@ -44,28 +48,26 @@ const emojisList = ref<Emojis[]>([])
 const isLoadingDone = ref<boolean>(false)
 
 onMounted(async () => {
-   await getGithubEmojisList()
+  await getGithubEmojisList()
 })
 
 async function getGithubEmojisList() {
   try {
-    fetch('https://api.github.com/emojis')
-      .then(res => res.json())
-      .then(data => {
-        if (data) {
-          const list: Emojis[] = []
-          for (let i in data) {
-            list.push({
-              name: i,
-              url: data[i]
-            })
-          }
+    const { data } = await GithubApi.getEmojisList()
 
-          emojisList.value = list
-          originEmojisList = [...list]
-          isLoadingDone.value = true
-        }
-      })
+    if (data) {
+      const list: Emojis[] = []
+      for (let i in data) {
+        list.push({
+          name: i,
+          url: data[i]
+        })
+      }
+
+      emojisList.value = list
+      originEmojisList = [...list]
+      isLoadingDone.value = true
+    }
   } catch {
     isLoadingDone.value = true
   }
@@ -77,5 +79,9 @@ function handleInputChange(val: string) {
   } else {
     emojisList.value = [...originEmojisList]
   }
+}
+
+function copy(text: string) {
+  copyText(`:${text}:`)
 }
 </script>

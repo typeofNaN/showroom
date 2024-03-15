@@ -16,7 +16,12 @@ const locale: I18nType.Schema = {
     action: 'Action',
     search: 'Search',
     pleaseInputSearchValue: 'Please enter the search value',
-    noData: 'Data is Empty'
+    noData: 'Data is Empty',
+    copy: {
+      browserNotSupportedCopy: 'Your browser not support copy, please change browser and try again!',
+      copySuccess: 'Copy success!',
+      copyFail: 'Copy fail!'
+    }
   },
   routes: {
     dashboard: {
