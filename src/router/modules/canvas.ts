@@ -31,6 +31,17 @@ const canvasRoute: AuthRoute.Route = {
         keepAlive: false,
         localIcon: 'code-rain'
       }
+    },
+    {
+      name: 'canvas_dynamic-clock',
+      path: '/canvas/dynamic-clock',
+      component: 'self',
+      meta: {
+        title: '动态时钟',
+        i18nTitle: 'routes.canvas.dynamicClock',
+        keepAlive: false,
+        localIcon: 'clock'
+      }
     }
   ]
 }

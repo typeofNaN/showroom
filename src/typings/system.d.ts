@@ -341,6 +341,7 @@ declare namespace I18nType {
         _value: string
         drawTree: string
         codeRain: string
+        dynamicClock: string
       }
       github: {
         _value: string

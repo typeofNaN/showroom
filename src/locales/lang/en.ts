@@ -32,7 +32,8 @@ const locale: I18nType.Schema = {
     canvas: {
       _value: 'Canvas',
       drawTree: 'Draw Tree',
-      codeRain: 'Code Rain'
+      codeRain: 'Code Rain',
+      dynamicClock: 'Dynamic Clock'
     },
     github: {
       _value: 'Github',

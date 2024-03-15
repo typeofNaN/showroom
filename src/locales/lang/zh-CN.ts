@@ -32,7 +32,8 @@ const locale: I18nType.Schema = {
     canvas: {
       _value: 'Canvas画布',
       drawTree: '画一棵树',
-      codeRain: '代码雨'
+      codeRain: '代码雨',
+      dynamicClock: '动态时钟'
     },
     github: {
       _value: 'Github',

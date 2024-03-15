@@ -25,6 +25,7 @@ declare namespace PageRoute {
     | 'canvas'
     | 'canvas_code-rain'
     | 'canvas_draw-tree'
+    | 'canvas_dynamic-clock'
     | 'dashboard'
     | 'github'
     | 'github_emojis';
@@ -43,6 +44,7 @@ declare namespace PageRoute {
     | 'not-found'
     | 'canvas_code-rain'
     | 'canvas_draw-tree'
+    | 'canvas_dynamic-clock'
     | 'dashboard'
     | 'github_emojis'
   >;

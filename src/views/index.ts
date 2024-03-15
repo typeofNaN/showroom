@@ -12,6 +12,7 @@ export const views: Record<
   'not-found': () => import('./_builtin/not-found/index.vue'),
   'canvas_code-rain': () => import('./canvas/code-rain/index.vue'),
   'canvas_draw-tree': () => import('./canvas/draw-tree/index.vue'),
+  'canvas_dynamic-clock': () => import('./canvas/dynamic-clock/index.vue'),
   dashboard: () => import('./dashboard/index.vue'),
   github_emojis: () => import('./github/emojis/index.vue')
 };
