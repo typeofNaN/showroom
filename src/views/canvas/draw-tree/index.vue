@@ -1,7 +1,7 @@
 <template>
   <div class="h-full">
-    <div class="h-full bg-#9af0f3 rounded-8px container-box">
-      <div class="white-circle" />
+    <div class="h-full bg-#9af0f3 rounded-8px container-box relative overflow-hidden">
+      <div class="white-circle absolute bottom-0 left-50% ml--400px mb--150px w-800px h-800px bg-#fff b-rd-50%" />
       <div class="h-full relative">
         <canvas ref="canvasRef" />
       </div>
@@ -70,22 +70,3 @@ onMounted(() => {
   }
 })
 </script>
-
-<style lang="scss" scoped>
-.container-box {
-  position: relative;
-  overflow: hidden;
-
-  .white-circle {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -400px;
-    margin-bottom: -150px;
-    width: 800px;
-    height: 800px;
-    border-radius: 50%;
-    background-color: #fff;
-  }
-}
-</style>
