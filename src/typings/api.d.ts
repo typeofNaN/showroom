@@ -21,3 +21,23 @@ declare namespace ApiRoute {
     home: AuthRoute.AllRouteKey
   }
 }
+
+/**
+ * @description 每日一言返回值
+ */
+declare namespace ApiHitokoto {
+  interface IGetHitokotoDataRes {
+    id: number
+    uuid: string
+    hitokoto: string
+    type: string
+    from: string
+    from_who: string
+    creator: string
+    creator_uid: number,
+    reviewer: number,
+    commit_from: string
+    created_at: string
+    length: number
+  }
+}
