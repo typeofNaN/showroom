@@ -188,6 +188,9 @@ const locale: I18nType.Schema = {
     }
   },
   page: {
+    dashboard: {
+      hitokoto: '每日一言'
+    },
     login: {
       common: {
         userNamePlaceholder: '请输入用户名',

@@ -1,14 +1,16 @@
 <template>
-  <n-card :bordered="false" class="rounded-8px shadow-sm" title="每日一言">
+  <n-card :bordered="false" class="rounded-8px shadow-sm" :title="$t('page.dashboard.hitokoto')">
     <template #header-extra>
       <hover-container class="w-64px h-full" placement="bottom-end" @click="getHitokotoData">
         <icon-mdi-refresh class="text-22px" :class="{ 'animate-spin': loading }" />
       </hover-container>
     </template>
     <template v-if="hitokotoData">
-      <div class="content">“{{ hitokotoData.hitokoto }}”</div>
-      <div class="from">《{{ hitokotoData.from }}》</div>
-      <div class="author"> -- {{ hitokotoData.from_who }}</div>
+      <div class="text-center">
+        <div class="h-120px font-700 font-italic text-18px">“{{ hitokotoData.hitokoto }}”</div>
+        <div class="mb-10px font-700 text-16px ">《{{ hitokotoData.from }}》</div>
+        <div class="text-#777"> -- {{ hitokotoData.from_who || '佚名' }}</div>
+      </div>
     </template>
   </n-card>
 </template>
@@ -17,6 +19,7 @@
 import { onMounted, ref } from 'vue'
 
 import { useLoading } from '@/hooks'
+import { $t } from '@/locales'
 import { HitokotoApi } from '@/service'
 
 const hitokotoData = ref<ApiHitokoto.IGetHitokotoDataRes>({
@@ -42,11 +45,12 @@ onMounted(async () => {
 
 async function getHitokotoData() {
   startLoading()
+
   const { data } = await HitokotoApi.getHitokotoData()
-  console.log(data)
   if (data) {
     hitokotoData.value = data
   }
+
   endLoading()
 }
 </script>

@@ -496,6 +496,9 @@ declare namespace I18nType {
       }
     }
     page: {
+      dashboard: {
+        hitokoto: string
+      }
       login: {
         common: {
           userNamePlaceholder: string
