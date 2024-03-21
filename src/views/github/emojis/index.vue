@@ -12,7 +12,7 @@
       <n-spin size="large" />
     </div>
     <template v-else>
-      <n-row v-if="emojisList.length > 0" :gutter="[10, 10]">
+      <n-row v-if="emojisList.length > 0" :gutter="[16, 16]">
         <n-col v-for="i in emojisList" :span="4" :key="i.name">
           <n-card :bordered="false" hoverable class="rounded-8px shadow-sm">
             <div class="flex items-center h-40px cursor-copy" @click="copy(i.name)">
