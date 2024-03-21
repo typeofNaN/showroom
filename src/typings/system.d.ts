@@ -330,6 +330,10 @@ declare namespace I18nType {
         copySuccess: string
         copyFail: string
       }
+      download: {
+        success: string
+        fail: string
+      }
     }
     routes: {
       dashboard: {
@@ -342,6 +346,7 @@ declare namespace I18nType {
         drawTree: string
         codeRain: string
         dynamicClock: string
+        drawOfficialSeal: string
       }
       github: {
         _value: string
@@ -498,6 +503,18 @@ declare namespace I18nType {
     page: {
       dashboard: {
         hitokoto: string
+      }
+      canvas: {
+        drawOfficialSeal: {
+          companyNameLabel: string
+          companyNamePlaceholder: string
+          companyNameValidTip: string
+          sealNameLabel: string
+          sealNamePlaceholder: string
+          sealNameValidTip: string
+          createSeal: string
+          downloadSeal: string
+        }
       }
       login: {
         common: {

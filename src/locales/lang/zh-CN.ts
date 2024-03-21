@@ -21,6 +21,10 @@ const locale: I18nType.Schema = {
       browserNotSupportedCopy: '您的浏览器不支持复制功能，请更换浏览器后重试！',
       copySuccess: '复制成功！',
       copyFail: '复制失败！'
+    },
+    download: {
+      success: '下载成功！',
+      fail: '下载失败！'
     }
   },
   routes: {
@@ -33,7 +37,8 @@ const locale: I18nType.Schema = {
       _value: 'Canvas画布',
       drawTree: '画一棵树',
       codeRain: '代码雨',
-      dynamicClock: '动态时钟'
+      dynamicClock: '动态时钟',
+      drawOfficialSeal: '画公章'
     },
     github: {
       _value: 'Github',
@@ -190,6 +195,18 @@ const locale: I18nType.Schema = {
   page: {
     dashboard: {
       hitokoto: '每日一言'
+    },
+    canvas: {
+      drawOfficialSeal: {
+        companyNameLabel: '单位名：',
+        companyNamePlaceholder: '请输入单位名',
+        companyNameValidTip: '请输入单位名',
+        sealNameLabel: '公章名：',
+        sealNamePlaceholder: '请输入公章名',
+        sealNameValidTip: '请输入公章名',
+        createSeal: '生成公章',
+        downloadSeal: '下载公章'
+      }
     },
     login: {
       common: {

@@ -42,6 +42,17 @@ const canvasRoute: AuthRoute.Route = {
         keepAlive: false,
         localIcon: 'clock'
       }
+    },
+    {
+      name: 'canvas_draw-official-seal',
+      path: '/canvas/draw-official-seal',
+      component: 'self',
+      meta: {
+        title: '画公章',
+        i18nTitle: 'routes.canvas.drawOfficialSeal',
+        keepAlive: false,
+        localIcon: 'seal'
+      }
     }
   ]
 }

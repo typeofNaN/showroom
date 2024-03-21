@@ -21,6 +21,10 @@ const locale: I18nType.Schema = {
       browserNotSupportedCopy: 'Your browser not support copy, please change browser and try again!',
       copySuccess: 'Copy success!',
       copyFail: 'Copy fail!'
+    },
+    download: {
+      success: 'Download Success!',
+      fail: 'Download fail!'
     }
   },
   routes: {
@@ -33,7 +37,8 @@ const locale: I18nType.Schema = {
       _value: 'Canvas',
       drawTree: 'Draw Tree',
       codeRain: 'Code Rain',
-      dynamicClock: 'Dynamic Clock'
+      dynamicClock: 'Dynamic Clock',
+      drawOfficialSeal: 'Draw official Seal'
     },
     github: {
       _value: 'Github',
@@ -190,6 +195,18 @@ const locale: I18nType.Schema = {
   page: {
     dashboard: {
       hitokoto: 'Hitokoto'
+    },
+    canvas: {
+      drawOfficialSeal: {
+        companyNameLabel: 'Company Name:',
+        companyNamePlaceholder: 'Please Input Company Name',
+        companyNameValidTip: 'Please Input Company Name',
+        sealNameLabel: 'Seal Name:',
+        sealNamePlaceholder: 'Please Input Seal Name',
+        sealNameValidTip: 'Please Input Seal Name',
+        createSeal: 'Create Seal',
+        downloadSeal: 'Download Seal'
+      }
     },
     login: {
       common: {

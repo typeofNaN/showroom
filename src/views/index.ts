@@ -11,6 +11,7 @@ export const views: Record<
   login: () => import('./_builtin/login/index.vue'),
   'not-found': () => import('./_builtin/not-found/index.vue'),
   'canvas_code-rain': () => import('./canvas/code-rain/index.vue'),
+  'canvas_draw-official-seal': () => import('./canvas/draw-official-seal/index.vue'),
   'canvas_draw-tree': () => import('./canvas/draw-tree/index.vue'),
   'canvas_dynamic-clock': () => import('./canvas/dynamic-clock/index.vue'),
   dashboard: () => import('./dashboard/index.vue'),
