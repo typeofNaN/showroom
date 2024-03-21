@@ -8,7 +8,7 @@
         </template>
       </n-input>
     </n-card>
-    <div v-if="loading" class="flex justify-center items-center h-500px">
+    <div v-if="loading" class="flex-center h-500px">
       <n-spin size="large" />
     </div>
     <template v-else>
@@ -23,7 +23,7 @@
         </n-col>
       </n-row>
       <n-card v-else :bordered="false" class="rounded-8px shadow-sm">
-        <div class="flex justify-center items-center h-500px">
+        <div class="flex-center h-500px">
           <n-empty :description="$t('common.noData')" size="huge" />
         </div>
       </n-card>

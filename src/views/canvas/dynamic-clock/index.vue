@@ -1,6 +1,6 @@
 <template>
   <div class="h-full">
-    <div class="h-full flex justify-center items-center bg-#224141 rounded-8px overflow-hidden">
+    <div class="h-full flex-center bg-#224141 rounded-8px overflow-hidden">
       <canvas ref="canvasRef" />
     </div>
   </div>

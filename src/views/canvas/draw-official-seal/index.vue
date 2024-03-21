@@ -3,7 +3,7 @@
     <div class="h-full bg-#fff rounded-8px">
       <n-row class="h-full">
         <n-col :span="12">
-          <div class="h-full flex justify-center items-center">
+          <div class="h-full flex-center">
             <n-form ref="formRef" :model="formModel" :rules="formRules" label-placement="left" label-width="140px"
               require-mark-placement="left">
               <n-form-item :label="$t('page.canvas.drawOfficialSeal.companyNameLabel')" path="companyName">
@@ -34,7 +34,7 @@
           </div>
         </n-col>
         <n-col :span="12">
-          <div class="h-full flex justify-center items-center">
+          <div class="h-full flex-center">
             <canvas ref="canvasRef" />
           </div>
         </n-col>
