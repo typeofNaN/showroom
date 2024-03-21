@@ -65,7 +65,7 @@ const drawHour = (
   ctx.save()
   ctx.beginPath()
   const rad = ((2 * Math.PI) / 12) * hour
-  var minuteRad = ((2 * Math.PI) / 12 / 60) * minute
+  const minuteRad = ((2 * Math.PI) / 12 / 60) * minute
   ctx.rotate(rad + minuteRad)
   ctx.lineWidth = 6 * rem
   ctx.lineCap = 'round'
@@ -92,7 +92,7 @@ const drawMinute = (ctx: CanvasRenderingContext2D, minute: number) => {
 // 绘制时钟的秒针
 const drawSecond = (ctx: CanvasRenderingContext2D, second: number) => {
   ctx.save()
-  var rad = ((2 * Math.PI) / 60) * second
+  const rad = ((2 * Math.PI) / 60) * second
   ctx.rotate(rad)
   ctx.fillStyle = '#c14543'
   ctx.beginPath()

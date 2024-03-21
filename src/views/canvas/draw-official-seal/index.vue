@@ -80,16 +80,16 @@ function createSeal() {
   canvas.height = 250
 
   // 绘制印章边框
-  const width = canvas.width / 2
-  const height = canvas.height / 2
+  const centerX = canvas.width / 2
+  const centerY = canvas.height / 2
   ctx.lineWidth = 5
   ctx.strokeStyle = '#f00'
   ctx.beginPath()
-  ctx.arc(width, height, 110, 0, Math.PI * 2)
+  ctx.arc(centerX, centerY, 110, 0, Math.PI * 2)
   ctx.stroke()
 
   // 画五角星
-  create5star(ctx, width, height, 30, '#f00', 0)
+  create5star(ctx, centerX, centerY, 30, '#f00', 0)
 
   // 绘制印章名称
   ctx.font = '20px Helvetica'
@@ -97,10 +97,10 @@ function createSeal() {
   ctx.textAlign = 'center' // 设置文本的水平对对齐方式
   ctx.lineWidth = 1
   ctx.fillStyle = '#f00'
-  ctx.fillText(formModel.value.sealName, width, height + 65)
+  ctx.fillText(formModel.value.sealName, centerX, centerY + 65)
 
   // 绘制印章单位
-  ctx.translate(width, height) // 平移到此位置,
+  ctx.translate(centerX, centerY) // 平移到此位置,
   ctx.font = '24px Helvetica'
   const count = formModel.value.companyName.length // 字数
   const angle = 4 * Math.PI / (3 * (count - 1)) // 字间角度

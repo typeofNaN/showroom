@@ -14,7 +14,7 @@
     <template v-if="hitokotoData">
       <div class="text-center">
         <div class="mb-40px font-700 font-italic text-18px">“{{ hitokotoData.hitokoto }}”</div>
-        <div class="mb-10px font-700 text-16px ">《{{ hitokotoData.from }}》</div>
+        <div class="mb-10px font-700 text-16px">《{{ hitokotoData.from }}》</div>
         <div class="flex justify-center items-center">
           <div class="mr-10px h-1px w-30px bg-#ccc" />
           <div class="text-#999">{{ hitokotoData.from_who || '佚名' }}</div>
