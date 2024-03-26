@@ -53,7 +53,7 @@ export default defineConfig(configEnv => {
       },
       outDir: 'dist',
       assetsDir: 'assets',
-      chunkSizeWarningLimit: 2000, // 解决包大小超过500kb的正告
+      chunkSizeWarningLimit: 2000, // 解决包大小超过500kb的警告
       rollupOptions: {
         output: {
           manualChunks: {},
