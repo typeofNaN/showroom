@@ -27,6 +27,7 @@ declare namespace PageRoute {
     | 'canvas_draw-official-seal'
     | 'canvas_draw-tree'
     | 'canvas_dynamic-clock'
+    | 'canvas_gobang'
     | 'dashboard'
     | 'github'
     | 'github_emojis';
@@ -47,6 +48,7 @@ declare namespace PageRoute {
     | 'canvas_draw-official-seal'
     | 'canvas_draw-tree'
     | 'canvas_dynamic-clock'
+    | 'canvas_gobang'
     | 'dashboard'
     | 'github_emojis'
   >;

@@ -14,6 +14,7 @@ export const views: Record<
   'canvas_draw-official-seal': () => import('./canvas/draw-official-seal/index.vue'),
   'canvas_draw-tree': () => import('./canvas/draw-tree/index.vue'),
   'canvas_dynamic-clock': () => import('./canvas/dynamic-clock/index.vue'),
+  canvas_gobang: () => import('./canvas/gobang/index.vue'),
   dashboard: () => import('./dashboard/index.vue'),
   github_emojis: () => import('./github/emojis/index.vue')
 };

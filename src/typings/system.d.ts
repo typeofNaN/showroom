@@ -347,6 +347,7 @@ declare namespace I18nType {
         codeRain: string
         dynamicClock: string
         drawOfficialSeal: string
+        gobang: string
       }
       github: {
         _value: string

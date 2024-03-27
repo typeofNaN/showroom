@@ -53,6 +53,17 @@ const canvasRoute: AuthRoute.Route = {
         keepAlive: false,
         localIcon: 'seal'
       }
+    },
+    {
+      name: 'canvas_gobang',
+      path: '/canvas/gobang',
+      component: 'self',
+      meta: {
+        title: '五子棋',
+        i18nTitle: 'routes.canvas.gobang',
+        keepAlive: false,
+        localIcon: 'gobang'
+      }
     }
   ]
 }

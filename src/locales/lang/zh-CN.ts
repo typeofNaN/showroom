@@ -38,7 +38,8 @@ const locale: I18nType.Schema = {
       drawTree: '画一棵树',
       codeRain: '代码雨',
       dynamicClock: '动态时钟',
-      drawOfficialSeal: '画公章'
+      drawOfficialSeal: '画公章',
+      gobang: '五子棋'
     },
     github: {
       _value: 'Github',
