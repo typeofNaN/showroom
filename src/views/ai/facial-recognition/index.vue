@@ -13,7 +13,7 @@ import * as faceApi from 'face-api.js'
 const MODEL_PATH = import.meta.env.DEV ? '/models/faceapi' : `${import.meta.env.BASE_URL}models/faceapi`
 
 const boxRef = ref<HTMLDivElement>()
-let video = document.getElementById('video')
+let video = document.getElementById('video') as HTMLVideoElement
 
 onMounted(() => {
   video = document.getElementById('video') as HTMLVideoElement
@@ -26,7 +26,7 @@ onBeforeUnmount(() => {
     video: true
   }).then(mediaStream => {
     mediaStream.getVideoTracks().forEach(track => { track.stop() })
-      ; (video as HTMLVideoElement).srcObject = null
+    video.srcObject = null
   })
 })
 
@@ -35,7 +35,7 @@ async function getCamera() {
     const mediaStream = await navigator.mediaDevices.getUserMedia({
       video: true
     })
-      ; (video as HTMLVideoElement).srcObject = mediaStream
+    video.srcObject = mediaStream
   } catch (e) {
     console.log(e)
   }
@@ -51,15 +51,15 @@ async function loadModels() {
 }
 
 function detectFace() {
-  const canvas = faceApi.createCanvasFromMedia(video as HTMLVideoElement)
+  const canvas = faceApi.createCanvasFromMedia(video)
   canvas.width = 960
   canvas.height = 720
   const ctx = canvas.getContext('2d') as CanvasRenderingContext2D
-  const { width, height } = video as HTMLVideoElement
+  const { width, height } = video
     ; (boxRef.value as HTMLDivElement).append(canvas)
   setInterval(async () => {
     const detections = await faceApi
-      .detectAllFaces(video as HTMLVideoElement, new faceApi.TinyFaceDetectorOptions())
+      .detectAllFaces(video, new faceApi.TinyFaceDetectorOptions())
       .withFaceLandmarks(true)
       .withFaceExpressions()
       .withAgeAndGender()
