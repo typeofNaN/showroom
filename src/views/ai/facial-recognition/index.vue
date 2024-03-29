@@ -10,7 +10,7 @@
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import * as faceApi from 'face-api.js'
 
-const MODEL_PATH = '/models/faceapi'
+const MODEL_PATH = import.meta.env.DEV ? '/models/faceapi' : `${import.meta.env.BASE_URL}models/faceapi`
 
 const boxRef = ref<HTMLDivElement>()
 let video = document.getElementById('video')
@@ -22,7 +22,12 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
-  
+  navigator.mediaDevices.getUserMedia({
+    video: true
+  }).then(mediaStream => {
+    mediaStream.getVideoTracks().forEach(track => { track.stop() })
+      ; (video as HTMLVideoElement).srcObject = null
+  })
 })
 
 async function getCamera() {
@@ -64,8 +69,7 @@ function detectFace() {
 
     faceApi.draw.drawFaceLandmarks(canvas, resizedDetections)
     resizedDetections.forEach(result => {
-      const { age, gender, genderProbability } = result
-      console.log(genderProbability)
+      const { age, gender } = result
       new faceApi.draw
         .DrawTextField([`${gender === 'male' ? '男' : '女'} ${~~age} 岁`], result.detection.box.bottomLeft)
         .draw(canvas)
