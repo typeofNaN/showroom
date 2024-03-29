@@ -10,6 +10,7 @@ export const views: Record<
   'constant-page': () => import('./_builtin/constant-page/index.vue'),
   login: () => import('./_builtin/login/index.vue'),
   'not-found': () => import('./_builtin/not-found/index.vue'),
+  'ai_facial-recognition': () => import('./ai/facial-recognition/index.vue'),
   'canvas_code-rain': () => import('./canvas/code-rain/index.vue'),
   'canvas_draw-official-seal': () => import('./canvas/draw-official-seal/index.vue'),
   'canvas_draw-tree': () => import('./canvas/draw-tree/index.vue'),

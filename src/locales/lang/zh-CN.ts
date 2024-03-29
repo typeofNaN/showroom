@@ -45,6 +45,10 @@ const locale: I18nType.Schema = {
       _value: 'Github',
       emojis: 'Github Emojis'
     },
+    ai: {
+      _value: 'AI',
+      facialRecognition: '人脸识别'
+    },
     document: {
       _value: '文档',
       vue: 'Vue文档',

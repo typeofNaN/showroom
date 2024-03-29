@@ -353,6 +353,10 @@ declare namespace I18nType {
         _value: string
         emojis: string
       }
+      ai: {
+        _value: string
+        facialRecognition: string
+      }
       document: {
         _value: string
         vue: string
