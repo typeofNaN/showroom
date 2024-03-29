@@ -1,1 +1,0 @@
-import{_ as o}from"./exception-base.vuevuetypescriptsetuptruelang-b2428d19.js";import{_ as c}from"./plugin-vueexport-helper-c27b6911.js";import{bc as t,bh as n}from"./index-207048c8.js";const r={};function _(s,a){const e=o;return t(),n(e,{type:"404"})}const i=c(r,[["render",_]]);export{i as default};
