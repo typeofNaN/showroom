@@ -14,6 +14,7 @@ const MODEL_PATH = import.meta.env.DEV ? '/models/faceapi' : `${import.meta.env.
 
 const boxRef = ref<HTMLDivElement>()
 let video = document.getElementById('video') as HTMLVideoElement
+let timer: any
 
 onMounted(() => {
   video = document.getElementById('video') as HTMLVideoElement
@@ -22,6 +23,7 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
+  clearInterval(timer)
   navigator.mediaDevices.getUserMedia({
     video: true
   }).then(mediaStream => {
@@ -57,7 +59,7 @@ function detectFace() {
   const ctx = canvas.getContext('2d') as CanvasRenderingContext2D
   const { width, height } = video
     ; (boxRef.value as HTMLDivElement).append(canvas)
-  setInterval(async () => {
+  timer = setInterval(async () => {
     const detections = await faceApi
       .detectAllFaces(video, new faceApi.TinyFaceDetectorOptions())
       .withFaceLandmarks(true)
