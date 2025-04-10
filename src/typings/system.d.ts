@@ -309,6 +309,10 @@ declare namespace I18nType {
   type Schema = {
     system: {
       title: string
+      updateTitle: string
+      updateContent: string
+      updateConfirm: string
+      updateCancel: string
     }
     common: {
       add: string

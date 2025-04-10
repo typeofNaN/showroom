@@ -5,6 +5,8 @@ interface Window {
   $notification?: import('naive-ui').NotificationProviderInst
 }
 
+declare const BUILD_TIME: string
+
 interface ViewTransition {
   ready: Promise<void>
 }

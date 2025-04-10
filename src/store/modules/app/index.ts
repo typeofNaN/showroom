@@ -2,6 +2,8 @@ import { nextTick } from 'vue'
 import { defineStore } from 'pinia'
 import { LAYOUT_SCROLL_EL_ID } from '@soybeanjs/vue-materials'
 
+import { localStg } from '@/utils'
+
 interface AppState {
   /** 滚动元素的id */
   scrollElId: string
@@ -17,6 +19,8 @@ interface AppState {
   siderCollapse: boolean
   /** vertical-mix模式下 侧边栏的固定状态 */
   mixSiderFixed: boolean
+  /** 语言 */
+  locale: I18nType.LangType
 }
 
 export const useAppStore = defineStore('app-store', {
@@ -27,8 +31,12 @@ export const useAppStore = defineStore('app-store', {
     reloadFlag: true,
     settingDrawerVisible: false,
     siderCollapse: false,
-    mixSiderFixed: false
+    mixSiderFixed: false,
+    locale: localStg.get('lang') || 'zh-CN'
   }),
+  getters: {
+    currentLocale: (state) => state.locale
+  },
   actions: {
     /**
      * @description 获取滚动配置
@@ -97,6 +105,11 @@ export const useAppStore = defineStore('app-store', {
     /** 设置主体内容全屏 */
     setContentFull(full: boolean) {
       this.contentFull = full
+    },
+    /** 设置语言 */
+    setLocale(locale: I18nType.LangType) {
+      this.locale = locale
+      localStg.set('lang', locale)
     }
   }
 })

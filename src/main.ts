@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 
 import { setupDirectives } from './directives'
 import { setupRouter } from './router'
-import { setupAssets } from './plugins'
+import { setupAssets, setupAppVersionNotification } from './plugins'
 import { setupStore } from './store'
 import { setupI18n } from './locales'
 import App from './App.vue'
@@ -29,6 +29,8 @@ async function setupApp() {
   await setupRouter(app)
 
   setupI18n(app)
+
+  setupAppVersionNotification()
 
   appLoading.unmount()
 

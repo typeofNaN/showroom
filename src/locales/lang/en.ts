@@ -1,6 +1,10 @@
 const locale: I18nType.Schema = {
   system: {
-    title: 'Showroom'
+    title: 'Showroom',
+    updateTitle: 'System Version Update Notification',
+    updateContent: 'A new version of the system has been detected. Do you want to refresh the page immediately?',
+    updateConfirm: 'Refresh immediately',
+    updateCancel: 'Later'
   },
   common: {
     add: 'Add',

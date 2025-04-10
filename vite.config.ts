@@ -4,6 +4,7 @@ import {
   createViteProxy,
   getRootPath,
   getSrcPath,
+  getBuildTime,
   setupVitePlugins
 } from './build'
 import { getServiceEnvConfig } from './.env-config'
@@ -13,6 +14,8 @@ const DRIVE_LETTER_REGEX = /^[a-z]:/i
 
 export default defineConfig(configEnv => {
   const viteEnv = loadEnv(configEnv.mode, process.cwd()) as unknown as ImportMetaEnv
+
+  const buildTime = getBuildTime()
 
   const rootPath = getRootPath()
   const srcPath = getSrcPath()
@@ -28,13 +31,16 @@ export default defineConfig(configEnv => {
         '~': rootPath
       }
     },
-    plugins: setupVitePlugins(viteEnv),
+    plugins: setupVitePlugins(viteEnv, buildTime),
     css: {
       preprocessorOptions: {
         scss: {
           additionalData: `@use "./src/styles/scss/global.scss" as *;`
         }
       }
+    },
+    define: {
+      BUILD_TIME: JSON.stringify(buildTime)
     },
     server: {
       host: '0.0.0.0',
@@ -56,7 +62,20 @@ export default defineConfig(configEnv => {
       chunkSizeWarningLimit: 2000, // 解决包大小超过500kb的警告
       rollupOptions: {
         output: {
-          manualChunks: {},
+          manualChunks: {
+            vue: ['vue', 'vue-router', 'pinia'],
+            naive: ['naive-ui'],
+            dayjs: ['dayjs'],
+            crypto: ['crypto-js'],
+            ua: ['ua-parser-js'],
+            qs: ['qs'],
+            xlsx: ['xlsx'],
+            lodash: ['lodash-es'],
+            axios: ['axios'],
+            clipboard: ['clipboard'],
+            colord: ['colord'],
+            formData: ['form-data']
+          },
           chunkFileNames: 'assets/[name]-[hash].js',
           entryFileNames: 'assets/[name]-[hash].js',
           assetFileNames: 'assets/[name]-[hash].[ext]',

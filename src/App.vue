@@ -1,6 +1,6 @@
 <template>
-  <n-config-provider :theme="theme.naiveTheme" :theme-overrides="theme.naiveThemeOverrides" :locale="zhCN"
-    :date-locale="dateZhCN" class="h-full">
+  <n-config-provider :theme="theme.naiveTheme" :theme-overrides="theme.naiveThemeOverrides" :locale="naiveLocale"
+    :date-locale="naiveDateLocale" class="h-full">
     <naive-provider>
       <router-view />
     </naive-provider>
@@ -8,12 +8,23 @@
 </template>
 
 <script setup lang="ts">
-import { dateZhCN, zhCN } from 'naive-ui'
+import { computed } from 'vue'
 
 import { useGlobalEvents } from '@/composables'
-import { subscribeStore, useThemeStore } from '@/store'
+import { naiveLocales, naiveDateLocales } from '@/locales/naive'
+import { useAppStore, subscribeStore, useThemeStore } from '@/store'
+
+const appStore = useAppStore()
 
 const theme = useThemeStore()
+
+const naiveLocale = computed(() => {
+  return naiveLocales[appStore.currentLocale]
+})
+
+const naiveDateLocale = computed(() => {
+  return naiveDateLocales[appStore.currentLocale]
+})
 
 subscribeStore()
 useGlobalEvents()

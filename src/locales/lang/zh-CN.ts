@@ -1,6 +1,10 @@
 const locale: I18nType.Schema = {
   system: {
-    title: 'Showroom'
+    title: 'Showroom',
+    updateTitle: '系统版本更新通知',
+    updateContent: '检测到系统有新版本发布，是否立即刷新页面？',
+    updateConfirm: '立即刷新',
+    updateCancel: '稍后再说'
   },
   common: {
     add: '添加',
