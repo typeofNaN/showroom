@@ -7,6 +7,7 @@ const locale: I18nType.Schema = {
     updateCancel: 'Later'
   },
   common: {
+    success: 'Success',
     add: 'Add',
     addSuccess: 'Add Success',
     edit: 'Edit',
@@ -14,11 +15,23 @@ const locale: I18nType.Schema = {
     delete: 'Delete',
     deleteSuccess: 'Delete Success',
     batchDelete: 'Batch Delete',
+    synchronizedCache: 'Synchronized Cache',
+    synchronizedCacheSuccess: 'Synchronized Cache Success',
+    save: 'Save',
+    saveSuccess: 'Save Success',
+    execute: 'Execute',
+    executeSuccess: 'Execute Success',
     confirm: 'Confirm',
     cancel: 'Cancel',
+    switch: 'Switch',
+    open: 'Open',
+    close: 'Close',
+    keywordSearch: 'Please enter the keyword search',
     pleaseCheckValue: 'Please check the value is valid',
     action: 'Action',
     search: 'Search',
+    reset: 'Reset',
+    refresh: 'Refresh',
     pleaseInputSearchValue: 'Please enter the search value',
     noData: 'Data is Empty',
     copy: {
@@ -29,7 +42,9 @@ const locale: I18nType.Schema = {
     download: {
       success: 'Download Success!',
       fail: 'Download fail!'
-    }
+    },
+    yes: 'Yes',
+    no: 'No'
   },
   routes: {
     dashboard: {

@@ -7,6 +7,7 @@
     </div>
     <header-menu v-else />
     <div class="flex justify-end h-full">
+      <global-search />
       <full-screen />
       <theme-mode />
       <toggle-lang />
@@ -28,6 +29,7 @@ import {
   ThemeMode,
   ToggleLang,
 } from './components'
+import GlobalSearch from '../global-search/index.vue'
 
 defineOptions({ name: 'GlobalHeader' })
 

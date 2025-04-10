@@ -315,6 +315,7 @@ declare namespace I18nType {
       updateCancel: string
     }
     common: {
+      success: string
       add: string
       addSuccess: string
       edit: string
@@ -322,11 +323,23 @@ declare namespace I18nType {
       delete: string
       deleteSuccess: string
       batchDelete: string
+      synchronizedCache: string
+      synchronizedCacheSuccess: string
+      save: string
+      saveSuccess: string
+      execute: string
+      executeSuccess: string
       confirm: string
       cancel: string
+      switch: string
+      open: string
+      close: string
+      keywordSearch: string
       pleaseCheckValue: string
       action: string
       search: string
+      reset: string
+      refresh: string
       pleaseInputSearchValue: string
       noData: string
       copy: {
@@ -338,6 +351,8 @@ declare namespace I18nType {
         success: string
         fail: string
       }
+      yes: string
+      no: string
     }
     routes: {
       dashboard: {

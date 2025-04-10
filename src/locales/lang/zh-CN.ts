@@ -7,19 +7,32 @@ const locale: I18nType.Schema = {
     updateCancel: '稍后再说'
   },
   common: {
+    success: '成功',
     add: '添加',
     addSuccess: '添加成功',
-    edit: '修改',
-    editSuccess: '修改成功',
+    edit: '编辑',
+    editSuccess: '编辑成功',
     delete: '删除',
     deleteSuccess: '删除成功',
     batchDelete: '批量删除',
+    synchronizedCache: '同步缓存',
+    synchronizedCacheSuccess: '同步缓存成功',
+    save: '保存',
+    saveSuccess: '保存成功',
+    execute: '执行',
+    executeSuccess: '执行成功',
     confirm: '确认',
     cancel: '取消',
+    switch: '切换',
+    open: '开启',
+    close: '关闭',
+    keywordSearch: '请输入关键词搜索',
     pleaseCheckValue: '请检查输入的值是否合法',
     action: '操作',
     search: '搜索',
-    pleaseInputSearchValue: '请输入搜索项',
+    reset: '重置',
+    refresh: '刷新',
+    pleaseInputSearchValue: '请输入搜索值',
     noData: '无数据',
     copy: {
       browserNotSupportedCopy: '您的浏览器不支持复制功能，请更换浏览器后重试！',
@@ -29,7 +42,9 @@ const locale: I18nType.Schema = {
     download: {
       success: '下载成功！',
       fail: '下载失败！'
-    }
+    },
+    yes: '是',
+    no: '否'
   },
   routes: {
     dashboard: {
