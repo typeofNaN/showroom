@@ -70,6 +70,8 @@ interface ImportMetaEnv {
   readonly VITE_APP_ROUTE_PLUGIN?: 'Y' | 'N'
   /** 是否是部署的vercel */
   readonly VITE_VERCEL?: 'Y' | 'N'
+  /** 是否自动检测更新 */
+  readonly VITE_AUTOMATICALLY_DETECT_UPDATE?: 'Y' | 'N'
 }
 
 interface ImportMeta {
