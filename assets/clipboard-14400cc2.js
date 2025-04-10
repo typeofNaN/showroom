@@ -1,4 +1,4 @@
-import{c as $,a as B}from"./naive-a42b4c0c.js";var R={exports:{}};/*!
+import{c as $,a as B}from"./naive-c480ebd7.js";var R={exports:{}};/*!
  * clipboard.js v2.0.11
  * https://clipboardjs.com/
  *
