@@ -1,1 +1,0 @@
-import{l as a,bc as e,bh as n,bl as o}from"./index-045e2827.js";import{_ as r}from"./clipboard-23a71f2b.js";/* empty css                                                   */const f=a({name:"BlankLayout",__name:"index",setup(s){return(t,_)=>(e(),n(o(r),{"show-padding":!1}))}});export{f as default};
