@@ -376,6 +376,10 @@ declare namespace I18nType {
         _value: string
         facialRecognition: string
       }
+      ppt: {
+        _value: string
+        ppt: string
+      }
       document: {
         _value: string
         vue: string

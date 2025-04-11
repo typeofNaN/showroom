@@ -32,7 +32,9 @@ declare namespace PageRoute {
     | 'canvas_gobang'
     | 'dashboard'
     | 'github'
-    | 'github_emojis';
+    | 'github_emojis'
+    | 'ppt'
+    | 'ppt_ppt';
 
   /**
    * last degree route key, which has the page file
@@ -54,5 +56,6 @@ declare namespace PageRoute {
     | 'canvas_gobang'
     | 'dashboard'
     | 'github_emojis'
+    | 'ppt_ppt'
   >;
 }

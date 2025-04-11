@@ -68,6 +68,10 @@ const locale: I18nType.Schema = {
       _value: 'AI',
       facialRecognition: '人脸识别'
     },
+    ppt: {
+      _value: 'PPT',
+      ppt: 'PPT'
+    },
     document: {
       _value: '文档',
       vue: 'Vue文档',

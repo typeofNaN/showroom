@@ -17,5 +17,6 @@ export const views: Record<
   'canvas_dynamic-clock': () => import('./canvas/dynamic-clock/index.vue'),
   canvas_gobang: () => import('./canvas/gobang/index.vue'),
   dashboard: () => import('./dashboard/index.vue'),
-  github_emojis: () => import('./github/emojis/index.vue')
+  github_emojis: () => import('./github/emojis/index.vue'),
+  ppt_ppt: () => import('./ppt/ppt/index.vue')
 };
