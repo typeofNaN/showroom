@@ -18,5 +18,6 @@ export const views: Record<
   canvas_gobang: () => import('./canvas/gobang/index.vue'),
   dashboard: () => import('./dashboard/index.vue'),
   github_emojis: () => import('./github/emojis/index.vue'),
-  ppt_ppt: () => import('./ppt/ppt/index.vue')
+  plugin_ppt: () => import('./plugin/ppt/index.vue'),
+  plugin_typewriter: () => import('./plugin/typewriter/index.vue')
 };

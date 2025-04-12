@@ -357,8 +357,6 @@ declare namespace I18nType {
     routes: {
       dashboard: {
         _value: string
-        analysis: string
-        workbench: string
       }
       canvas: {
         _value: string
@@ -376,51 +374,10 @@ declare namespace I18nType {
         _value: string
         facialRecognition: string
       }
-      ppt: {
-        _value: string
-        ppt: string
-      }
-      document: {
-        _value: string
-        vue: string
-        vite: string
-        naive: string
-        project: string
-        'project-link': string
-      }
-      component: {
-        _value: string
-        button: string
-        card: string
-        table: string
-      }
       plugin: {
         _value: string
-        charts: {
-          _value: string
-          antv: string
-          echarts: string
-        }
-        copy: string
-        editor: {
-          _value: string
-          markdown: string
-          quill: string
-        }
-        icon: string
-        map: string
-        print: string
-        swiper: string
-        video: string
-      }
-      'auth-demo': {
-        _value: string
-        permission: string
-        super: string
-      }
-      function: {
-        _value: string
-        tab: string
+        ppt: string
+        typewriter: string
       }
       exception: {
         _value: string
@@ -428,25 +385,6 @@ declare namespace I18nType {
         '404': string
         '500': string
       }
-      'multi-menu': {
-        _value: string
-        first: {
-          _value: string
-          second: string
-          'second-new': {
-            _value: string
-            third: string
-          }
-        }
-      }
-      management: {
-        _value: string
-        auth: string
-        role: string
-        route: string
-        user: string
-      }
-      about: string
     }
     layout: {
       settingDrawer: {
