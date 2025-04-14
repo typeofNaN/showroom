@@ -93,7 +93,7 @@
         "label": "按钮风格"
       }
     ],
-    "isCache": true
+    "isCache": false
   },
   "sider": {
     "inverted": false,

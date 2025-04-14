@@ -62,7 +62,7 @@ const canvasRoute: AuthRoute.Route = {
         title: '五子棋',
         i18nTitle: 'routes.canvas.gobang',
         keepAlive: false,
-        icon: 'fluent:border-all-24-regular'
+        icon: 'icon-park-solid:checkerboard'
       }
     }
   ]

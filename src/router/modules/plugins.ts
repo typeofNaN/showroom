@@ -3,7 +3,7 @@ const pluginRoute: AuthRoute.Route = {
   path: '/plugin',
   component: 'basic',
   meta: {
-    title: '插件示例',
+    title: '插件',
     i18nTitle: 'routes.plugin._value',
     keepAlive: false,
     icon: 'clarity:plugin-line',

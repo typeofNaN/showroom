@@ -6,7 +6,7 @@
       <theme-color-select />
       <page-func />
       <page-view />
-      <theme-config />
+      <!-- <theme-config /> -->
     </n-drawer-content>
   </n-drawer>
   <drawer-button v-if="showButton" />
@@ -22,7 +22,7 @@ import {
   PageFunc,
   PageView,
   ThemeColorSelect,
-  ThemeConfig
+  // ThemeConfig
 } from './components'
 
 defineOptions({ name: 'SettingDrawer' })

@@ -51,7 +51,7 @@ const locale: I18nType.Schema = {
       _value: '仪表盘'
     },
     canvas: {
-      _value: 'Canvas画布',
+      _value: 'Canvas',
       drawTree: '画一棵树',
       codeRain: '代码雨',
       dynamicClock: '动态时钟',
@@ -67,7 +67,7 @@ const locale: I18nType.Schema = {
       facialRecognition: '人脸识别'
     },
     plugin: {
-      _value: '插件示例',
+      _value: '插件',
       ppt: '幻灯片',
       typewriter: '打字机'
     },

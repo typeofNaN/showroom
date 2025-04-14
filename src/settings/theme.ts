@@ -69,7 +69,7 @@ const defaultThemeSetting: Theme.Setting = {
     height: 44,
     mode: 'chrome',
     modeList: themeTabModeOptions,
-    isCache: true
+    isCache: false
   },
   sider: {
     inverted: false,
