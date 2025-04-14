@@ -69,6 +69,7 @@ export default defineConfig(configEnv => {
             crypto: ['crypto-js'],
             ua: ['ua-parser-js'],
             qs: ['qs'],
+            echarts: ['echarts'],
             lodash: ['lodash-es'],
             axios: ['axios'],
             clipboard: ['clipboard'],

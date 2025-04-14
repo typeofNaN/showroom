@@ -369,6 +369,7 @@ declare namespace I18nType {
       github: {
         _value: string
         emojis: string
+        codeAnalysis: string
       }
       ai: {
         _value: string

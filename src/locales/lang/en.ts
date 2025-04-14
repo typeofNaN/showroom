@@ -60,7 +60,8 @@ const locale: I18nType.Schema = {
     },
     github: {
       _value: 'Github',
-      emojis: 'Github Emojis'
+      emojis: 'Github Emojis',
+      codeAnalysis: 'Code Analysis'
     },
     ai: {
       _value: 'AI',

@@ -1,6 +1,6 @@
 <template>
-  <div class="h-full">
-    <div class="h-full bg-#fff rounded-8px">
+  <div class="flex-col-stretch gap-16px overflow-hidden lt-sm:overflow-auto">
+    <n-card :title="$t('routes.canvas.drawOfficialSeal')" :bordered="false" class="h-full">
       <n-row class="h-full">
         <n-col :span="12">
           <div class="h-full flex-center">
@@ -39,7 +39,7 @@
           </div>
         </n-col>
       </n-row>
-    </div>
+    </n-card>
   </div>
 </template>
 
