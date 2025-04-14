@@ -45,7 +45,7 @@ const defaultThemeSetting: Theme.Setting = {
   },
   scrollMode: 'content',
   scrollModeList: themeScrollModeOptions,
-  themeColor: themeColorList[6],
+  themeColor: '#4B5CC4',
   themeColorList,
   otherColor: {
     info: '#2080f0',

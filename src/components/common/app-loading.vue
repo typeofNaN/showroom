@@ -1,6 +1,7 @@
 <template>
   <div class="fixed-center flex-col">
-    <system-logo class="text-128px text-primary" />
+    <!-- <system-logo class="text-128px text-primary" /> -->
+    <n-image width="128" :src="logoImg" />
     <div class="w-56px h-56px my-36px">
       <div class="relative h-full animate-spin">
         <div v-for="(item, index) in loadingClasses" :key="index"
@@ -14,6 +15,7 @@
 <script setup lang="ts">
 import { $t } from '@/locales'
 import { getRgbOfColor, sessionStg } from '@/utils'
+import logoImg from '@/assets/images/big-logo.png'
 import themeSettings from '@/settings/theme.json'
 
 const loadingClasses = [
