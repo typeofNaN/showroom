@@ -6,7 +6,7 @@ const githubRoute: AuthRoute.Route = {
     title: 'Github',
     i18nTitle: 'routes.github._value',
     keepAlive: false,
-    localIcon: 'github',
+    icon: 'carbon:logo-github',
     order: 3
   },
   children: [
@@ -18,7 +18,7 @@ const githubRoute: AuthRoute.Route = {
         title: 'Github Emojis',
         i18nTitle: 'routes.github.emojis',
         keepAlive: false,
-        localIcon: 'emojis'
+        icon: 'mingcute:emoji-line'
       }
     }
   ]

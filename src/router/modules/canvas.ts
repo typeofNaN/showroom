@@ -6,7 +6,7 @@ const canvasRoute: AuthRoute.Route = {
     title: 'Canvas',
     i18nTitle: 'routes.canvas._value',
     keepAlive: false,
-    localIcon: 'canvas',
+    icon: 'hugeicons:canvas',
     order: 2
   },
   children: [
@@ -18,7 +18,7 @@ const canvasRoute: AuthRoute.Route = {
         title: '画一颗树',
         i18nTitle: 'routes.canvas.drawTree',
         keepAlive: false,
-        localIcon: 'tree'
+        icon: 'meteor-icons:tree-deciduous'
       }
     },
     {
@@ -29,7 +29,7 @@ const canvasRoute: AuthRoute.Route = {
         title: '代码雨',
         i18nTitle: 'routes.canvas.codeRain',
         keepAlive: false,
-        localIcon: 'code-rain'
+        icon: 'carbon:rain-heavy'
       }
     },
     {
@@ -40,7 +40,7 @@ const canvasRoute: AuthRoute.Route = {
         title: '动态时钟',
         i18nTitle: 'routes.canvas.dynamicClock',
         keepAlive: false,
-        localIcon: 'clock'
+        icon: 'material-symbols:alarm-outline'
       }
     },
     {
@@ -51,7 +51,7 @@ const canvasRoute: AuthRoute.Route = {
         title: '画公章',
         i18nTitle: 'routes.canvas.drawOfficialSeal',
         keepAlive: false,
-        localIcon: 'seal'
+        icon: 'mingcute:seal-line'
       }
     },
     {
@@ -62,7 +62,7 @@ const canvasRoute: AuthRoute.Route = {
         title: '五子棋',
         i18nTitle: 'routes.canvas.gobang',
         keepAlive: false,
-        localIcon: 'gobang'
+        icon: 'fluent:border-all-24-regular'
       }
     }
   ]

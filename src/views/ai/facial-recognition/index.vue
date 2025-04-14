@@ -58,7 +58,7 @@ function detectFace() {
   canvas.height = 720
   const ctx = canvas.getContext('2d') as CanvasRenderingContext2D
   const { width, height } = video
-    ; (boxRef.value as HTMLDivElement).append(canvas)
+  boxRef.value!.append(canvas)
   timer = setInterval(async () => {
     const detections = await faceApi
       .detectAllFaces(video, new faceApi.TinyFaceDetectorOptions())

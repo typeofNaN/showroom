@@ -68,17 +68,15 @@ export class Gobang {
     this.gobang = options.canvas as HTMLCanvasElement
     this.gobang.width = 600
     this.gobang.height = 600
-    this.context = (this.gobang as HTMLCanvasElement).getContext('2d', {
-      willReadFrequently: true
-    }) as CanvasRenderingContext2D
+    this.context = this.gobang.getContext('2d', { willReadFrequently: true }) as CanvasRenderingContext2D
     this.context.strokeStyle = '#aaa'
     this.context.lineWidth = 1
 
-      // 清空
-      ; (this.gobang as HTMLCanvasElement).onclick = null
+    // 清空
+    this.gobang.onclick = null
     this.context.fillStyle = '#ddd'
     this.context.beginPath()
-    this.context.fillRect(0, 0, (this.gobang as HTMLCanvasElement).clientWidth, (this.gobang as HTMLCanvasElement).clientHeight)
+    this.context.fillRect(0, 0, this.gobang.clientWidth, this.gobang.clientHeight)
     this.context.closePath()
 
     // 棋盘样式
@@ -89,8 +87,8 @@ export class Gobang {
 
     // 棋盘元素
     this.lattice = {
-      width: ((this.gobang as HTMLCanvasElement).clientWidth - this.gobangStyle.padding * 2) / this.gobangStyle.count,
-      height: ((this.gobang as HTMLCanvasElement).clientHeight - this.gobangStyle.padding * 2) / this.gobangStyle.count
+      width: (this.gobang.clientWidth - this.gobangStyle.padding * 2) / this.gobangStyle.count,
+      height: (this.gobang.clientHeight - this.gobangStyle.padding * 2) / this.gobangStyle.count
     }
 
     // 初始化

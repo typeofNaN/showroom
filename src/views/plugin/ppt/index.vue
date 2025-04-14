@@ -3,11 +3,11 @@
     <div class="h-full rounded-8px bg-#fff overflow-hidden reveal" ref="revealRef">
       <div class="slides">
         <section data-transition="fade" data-background-color="#CCFBFF">
-          <section>幻燈片</section>
-          <section>幻燈片</section>
-          <section>幻燈片</section>
+          <section>幻灯片</section>
+          <section>幻灯片</section>
+          <section>幻灯片</section>
         </section>
-        <section>幻燈片</section>
+        <section>幻灯片</section>
       </div>
     </div>
   </div>
@@ -27,7 +27,7 @@ onMounted(() => {
   reveal.value = new Reveal(revealRef.value!, {
     transition: 'slide',
     // 其他配置選項
-    progress: true,
+    progress: false,
     slideNumber: 'c/t'
   })
 

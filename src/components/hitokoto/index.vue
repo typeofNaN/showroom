@@ -1,5 +1,5 @@
 <template>
-  <n-card :bordered="false" class="rounded-8px shadow-sm">
+  <n-card :bordered="false">
     <template #header>
       <div class="flex items-center">
         <svg-icon local-icon="topic" />

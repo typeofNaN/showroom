@@ -7,8 +7,7 @@ const dashboardRoute: AuthRoute.Route = {
     i18nTitle: 'routes.dashboard._value',
     keepAlive: true,
     singleLayout: 'basic',
-    // icon: 'fluent:book-information-24-regular',
-    localIcon: 'dashboard',
+    icon: 'carbon:home',
     order: 1
   }
 }

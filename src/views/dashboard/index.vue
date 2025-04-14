@@ -1,16 +1,17 @@
 <template>
-  <n-space :vertical="true" :size="16">
-    <n-row :gutter="[16, 16]">
-      <n-col :span="18">
-        <n-card :bordered="false" class="rounded-8px shadow-sm">hello</n-card>
-      </n-col>
-      <n-col :span="6">
-        <Hitokoto />
-      </n-col>
-    </n-row>
-  </n-space>
+  <div class="flex gap-16px h-full">
+    <n-card title="" :bordered="false" size="small" class="w-[calc(100%-316px)] flex-center">
+      <div class="h-full flex-center flex-col select-none">
+        <n-image :src="welcomeImg" object-fit="contain" width="1000" :preview-disabled="true" />
+      </div>
+    </n-card>
+    <div class="w-300px">
+      <Hitokoto />
+    </div>
+  </div>
 </template>
 
 <script lang="ts" setup>
 import Hitokoto from '@/components/hitokoto/index.vue'
+import welcomeImg from '@/assets/images/welcome.png'
 </script>

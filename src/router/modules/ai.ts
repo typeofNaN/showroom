@@ -6,7 +6,7 @@ const AiRoute: AuthRoute.Route = {
     title: 'AI',
     i18nTitle: 'routes.ai._value',
     keepAlive: false,
-    localIcon: 'ai',
+    icon: 'hugeicons:artificial-intelligence-02',
     order: 4
   },
   children: [
@@ -18,7 +18,7 @@ const AiRoute: AuthRoute.Route = {
         title: '人脸识别',
         i18nTitle: 'routes.ai.facialRecognition',
         keepAlive: false,
-        localIcon: 'facial-recognition'
+        icon: 'tabler:face-id'
       }
     }
   ]
