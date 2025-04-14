@@ -16,7 +16,7 @@
         <n-col v-for="i in emojisList" :span="4" :key="i.name">
           <n-card :bordered="false" hoverable class="rounded-8px shadow-sm">
             <div class="flex items-center h-40px cursor-copy" @click="copy(i.name)">
-              <n-image :src="i.url" lazy width="40" class="mr-10px" />
+              <n-image :src="i.url" lazy preview-disabled width="40" class="mr-10px" />
               <span>{{ i.name }}</span>
             </div>
           </n-card>
