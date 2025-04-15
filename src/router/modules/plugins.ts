@@ -31,6 +31,17 @@ const pluginRoute: AuthRoute.Route = {
         keepAlive: false,
         icon: 'streamline:interface-edit-typewriter-typewriter-company-office-supplies-work'
       }
+    },
+    {
+      name: 'plugin_pinyin',
+      path: '/plugin/pinyin',
+      component: 'self',
+      meta: {
+        title: '拼音',
+        i18nTitle: 'routes.plugin.pinyin',
+        keepAlive: false,
+        icon: 'ri:pinyin-input'
+      }
     }
   ]
 }

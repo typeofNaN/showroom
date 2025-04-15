@@ -35,6 +35,7 @@ declare namespace PageRoute {
     | 'github_code-analysis'
     | 'github_emojis'
     | 'plugin'
+    | 'plugin_pinyin'
     | 'plugin_ppt'
     | 'plugin_typewriter';
 
@@ -59,6 +60,7 @@ declare namespace PageRoute {
     | 'dashboard'
     | 'github_code-analysis'
     | 'github_emojis'
+    | 'plugin_pinyin'
     | 'plugin_ppt'
     | 'plugin_typewriter'
   >;

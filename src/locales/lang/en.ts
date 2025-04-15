@@ -70,7 +70,8 @@ const locale: I18nType.Schema = {
     plugin: {
       _value: 'Plugin',
       ppt: 'PPT',
-      typewriter: 'Typewriter'
+      typewriter: 'Typewriter',
+      pinyin: 'Pin Yin'
     },
     exception: {
       _value: 'Exception',

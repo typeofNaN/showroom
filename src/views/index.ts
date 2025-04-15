@@ -19,6 +19,7 @@ export const views: Record<
   dashboard: () => import('./dashboard/index.vue'),
   'github_code-analysis': () => import('./github/code-analysis/index.vue'),
   github_emojis: () => import('./github/emojis/index.vue'),
+  plugin_pinyin: () => import('./plugin/pinyin/index.vue'),
   plugin_ppt: () => import('./plugin/ppt/index.vue'),
   plugin_typewriter: () => import('./plugin/typewriter/index.vue')
 };

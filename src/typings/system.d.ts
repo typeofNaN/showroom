@@ -379,6 +379,7 @@ declare namespace I18nType {
         _value: string
         ppt: string
         typewriter: string
+        pinyin: string
       }
       exception: {
         _value: string

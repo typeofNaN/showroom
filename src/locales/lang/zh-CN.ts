@@ -70,7 +70,8 @@ const locale: I18nType.Schema = {
     plugin: {
       _value: '插件',
       ppt: '幻灯片',
-      typewriter: '打字机'
+      typewriter: '打字机',
+      pinyin: '拼音'
     },
     exception: {
       _value: '异常页',
