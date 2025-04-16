@@ -12,6 +12,9 @@
       <theme-mode />
       <toggle-lang />
       <setting-button v-if="showButton" />
+      <div class="flex items-center h-full">
+        <n-divider vertical />
+      </div>
     </div>
   </dark-mode-container>
 </template>
