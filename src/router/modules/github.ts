@@ -7,7 +7,7 @@ const githubRoute: AuthRoute.Route = {
     i18nTitle: 'routes.github._value',
     keepAlive: false,
     icon: 'carbon:logo-github',
-    order: 3
+    order: 4
   },
   children: [
     {

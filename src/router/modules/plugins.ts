@@ -7,7 +7,7 @@ const pluginRoute: AuthRoute.Route = {
     i18nTitle: 'routes.plugin._value',
     keepAlive: false,
     icon: 'clarity:plugin-line',
-    order: 4
+    order: 5
   },
   children: [
     {

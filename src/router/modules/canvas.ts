@@ -7,7 +7,7 @@ const canvasRoute: AuthRoute.Route = {
     i18nTitle: 'routes.canvas._value',
     keepAlive: false,
     icon: 'hugeicons:canvas',
-    order: 2
+    order: 3
   },
   children: [
     {

@@ -50,6 +50,9 @@ const locale: I18nType.Schema = {
     dashboard: {
       _value: 'Dashboard'
     },
+    visualEffects: {
+      _value: 'Visual Effects'
+    },
     canvas: {
       _value: 'Canvas',
       drawTree: 'Draw Tree',
@@ -164,6 +167,9 @@ const locale: I18nType.Schema = {
   page: {
     dashboard: {
       hitokoto: 'Hitokoto'
+    },
+    visualEffects: {
+      honeycombLayout: 'Honeycomb Layout'
     },
     canvas: {
       drawOfficialSeal: {

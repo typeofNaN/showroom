@@ -22,5 +22,6 @@ export const views: Record<
   github_emojis: () => import('./github/emojis/index.vue'),
   plugin_pinyin: () => import('./plugin/pinyin/index.vue'),
   plugin_ppt: () => import('./plugin/ppt/index.vue'),
-  plugin_typewriter: () => import('./plugin/typewriter/index.vue')
+  plugin_typewriter: () => import('./plugin/typewriter/index.vue'),
+  'visual-effects': () => import('./visual-effects/index.vue')
 };

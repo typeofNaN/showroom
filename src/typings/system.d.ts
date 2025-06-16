@@ -358,6 +358,9 @@ declare namespace I18nType {
       dashboard: {
         _value: string
       }
+      visualEffects: {
+        _value: string
+      }
       canvas: {
         _value: string
         drawTree: string
@@ -472,6 +475,9 @@ declare namespace I18nType {
     page: {
       dashboard: {
         hitokoto: string
+      }
+      visualEffects: {
+        honeycombLayout: string
       }
       canvas: {
         drawOfficialSeal: {

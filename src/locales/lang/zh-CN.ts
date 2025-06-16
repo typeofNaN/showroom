@@ -50,6 +50,9 @@ const locale: I18nType.Schema = {
     dashboard: {
       _value: '仪表盘'
     },
+    visualEffects: {
+      _value: '视觉特效'
+    },
     canvas: {
       _value: 'Canvas',
       drawTree: '画一棵树',
@@ -164,6 +167,9 @@ const locale: I18nType.Schema = {
   page: {
     dashboard: {
       hitokoto: '每日一言'
+    },
+    visualEffects: {
+      honeycombLayout: '蜂巢布局'
     },
     canvas: {
       drawOfficialSeal: {

@@ -38,7 +38,8 @@ declare namespace PageRoute {
     | 'plugin'
     | 'plugin_pinyin'
     | 'plugin_ppt'
-    | 'plugin_typewriter';
+    | 'plugin_typewriter'
+    | 'visual-effects';
 
   /**
    * last degree route key, which has the page file
@@ -65,5 +66,6 @@ declare namespace PageRoute {
     | 'plugin_pinyin'
     | 'plugin_ppt'
     | 'plugin_typewriter'
+    | 'visual-effects'
   >;
 }
