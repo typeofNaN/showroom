@@ -16,6 +16,7 @@ export const views: Record<
   'canvas_draw-tree': () => import('./canvas/draw-tree/index.vue'),
   'canvas_dynamic-clock': () => import('./canvas/dynamic-clock/index.vue'),
   canvas_gobang: () => import('./canvas/gobang/index.vue'),
+  'canvas_scratch-card': () => import('./canvas/scratch-card/index.vue'),
   dashboard: () => import('./dashboard/index.vue'),
   'github_code-analysis': () => import('./github/code-analysis/index.vue'),
   github_emojis: () => import('./github/emojis/index.vue'),

@@ -64,6 +64,17 @@ const canvasRoute: AuthRoute.Route = {
         keepAlive: false,
         icon: 'icon-park-solid:checkerboard'
       }
+    },
+    {
+      name: 'canvas_scratch-card',
+      path: '/canvas/scratch-card',
+      component: 'self',
+      meta: {
+        title: '刮刮乐',
+        i18nTitle: 'routes.canvas.scratchCard',
+        keepAlive: false,
+        icon: 'game-icons:triple-scratches'
+      }
     }
   ]
 }

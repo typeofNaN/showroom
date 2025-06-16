@@ -365,6 +365,7 @@ declare namespace I18nType {
         dynamicClock: string
         drawOfficialSeal: string
         gobang: string
+        scratchCard: string
       }
       github: {
         _value: string

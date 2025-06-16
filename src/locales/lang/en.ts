@@ -56,7 +56,8 @@ const locale: I18nType.Schema = {
       codeRain: 'Code Rain',
       dynamicClock: 'Dynamic Clock',
       drawOfficialSeal: 'Draw official Seal',
-      gobang: 'Gobang'
+      gobang: 'Gobang',
+      scratchCard: 'Scratch Card'
     },
     github: {
       _value: 'Github',
