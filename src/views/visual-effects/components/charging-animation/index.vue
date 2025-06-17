@@ -13,22 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onBeforeMount } from 'vue'
-
 const list = new Array(15).fill(0)
-
-onBeforeMount(() => {
-  document.styleSheets[0].insertRule(`
-    @keyframes bubbleMoveToTop{
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.1;
-      transform: translate(-50%, -260px);
-    }}
-  `)
-})
 </script>
 
 <style lang="scss" scoped>
@@ -129,6 +114,19 @@ onBeforeMount(() => {
     100% {
       filter: contrast(15) hue-rotate(360deg);
     }
+  }
+}
+</style>
+
+<style lang="scss">
+@keyframes bubbleMoveToTop {
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.1;
+    transform: translate(-50%, -260px);
   }
 }
 </style>
