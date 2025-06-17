@@ -2,7 +2,7 @@
   <n-space vertical :size="16">
     <n-row :gutter="[16, 16]">
       <n-col v-for="(item, index) in list" :span="12" :key="index">
-        <n-card :title="$t(item.name)" :bordered="false" class="h-440px">
+        <n-card :title="$t(item.name)" :bordered="false" class="h-500px">
           <component :is="item.component" />
         </n-card>
       </n-col>
