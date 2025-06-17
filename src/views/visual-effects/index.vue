@@ -12,6 +12,10 @@
 
 <script lang="ts" setup>
 import Honeycomb from './components/honeycomb/index.vue'
+import BgFusion from './components/bg-fusion/index.vue'
+import MixBlendMode from './components/mix-blend-mode/index.vue'
+import AudioLoading from './components/audio-loading/index.vue'
+import ChargingAnimation from './components/charging-animation/index.vue'
 
 type ListType = {
   name: string
@@ -20,8 +24,24 @@ type ListType = {
 
 const list: ListType[] = [
   {
-    name: 'page.visualEffects.honeycombLayout',
+    name: '',
     component: Honeycomb
+  },
+  {
+    name: '',
+    component: BgFusion
+  },
+  {
+    name: '',
+    component: MixBlendMode
+  },
+  {
+    name: '',
+    component: AudioLoading
+  },
+  {
+    name: '',
+    component: ChargingAnimation
   }
 ]
 </script>

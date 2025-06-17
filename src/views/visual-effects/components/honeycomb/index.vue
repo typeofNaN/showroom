@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .container-box {
   --uno: flex-center w-full;
 
