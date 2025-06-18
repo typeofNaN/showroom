@@ -5,7 +5,7 @@
         <n-image :src="welcomeImg" object-fit="contain" width="1000" :preview-disabled="true" />
       </div>
     </n-card>
-    <div class="w-300px">
+    <div class="flex flex-col gap-16px w-300px">
       <Hitokoto />
     </div>
   </div>

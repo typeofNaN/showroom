@@ -6,16 +6,12 @@
 
 <style lang="scss" scoped>
 .container-box {
-  width: 100%;
-  height: 360px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  --uno: flex-center w-full h-full;
 
   .content {
     width: 600px;
     height: 160px;
-    background-image: linear-gradient(45deg, #000 0, #000 50%, #fff 50%);
+    background-image: linear-gradient(-45deg, #000 0, #000 50%, #ccc 50%);
     position: relative;
 
     &::after {

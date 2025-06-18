@@ -4,17 +4,11 @@
 
 <style lang="scss" scoped>
 .container-box {
-  width: 100%;
-  height: 360px;
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  position: relative;
+  --uno: w-full h-full flex-center relative bg-white dark:bg-black;
   filter: contrast(10);
 
   &::before {
+    --uno: bg-black dark:bg-white;
     content: "";
     position: absolute;
     width: 130px;
@@ -24,7 +18,6 @@
     top: 50%;
     margin-top: -65px;
     margin-left: -150px;
-    background-color: black;
     animation: moveToRight 5s linear infinite;
     filter: blur(5px);
   }

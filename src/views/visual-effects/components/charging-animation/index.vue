@@ -18,28 +18,28 @@ const list = new Array(15).fill(0)
 
 <style lang="scss" scoped>
 .container-box {
-  height: 500px;
+  --uno: bg-white dark:bg-black;
+  height: 460px;
   display: flex;
   flex: 1;
   justify-content: center;
   position: relative;
-  background-color: #fff;
 
   .number {
+    --uno: text-black dark:text-white;
     position: absolute;
     width: 300px;
     top: 20%;
     text-align: center;
     font-size: 32px;
     z-index: 10;
-    color: #000;
   }
 
   .contrast {
+    --uno: bg-white dark:bg-black;
     width: 300px;
-    height: 500px;
+    height: 460px;
     overflow: hidden;
-    background-color: #fff;
     animation: hueRotate 10s infinite linear;
     filter: contrast(10) hue-rotate(0);
 
@@ -65,6 +65,7 @@ const list = new Array(15).fill(0)
       }
 
       &::after {
+        --uno: bg-white dark:bg-black;
         content: "";
         position: absolute;
         width: 176px;
@@ -73,7 +74,6 @@ const list = new Array(15).fill(0)
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
-        background-color: #fff;
         z-index: 10;
       }
     }

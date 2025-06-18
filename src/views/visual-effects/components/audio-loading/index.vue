@@ -12,11 +12,7 @@ const list = new Array(15).fill(0)
 
 <style lang="scss" scoped>
 .container-box {
-  width: 100%;
-  height: 360px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  --uno: flex-center w-full h-full;
 
   $height: 80px;
   $gap: 15px;

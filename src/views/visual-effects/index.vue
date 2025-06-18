@@ -2,9 +2,9 @@
   <n-space vertical :size="16">
     <n-row :gutter="[16, 16]">
       <n-col v-for="(item, index) in list" :span="12" :key="index">
-        <div class="flex-center b-rd-4px bg-#fff h-500px">
+        <n-card class="b-rd-4px h-500px">
           <component :is="item.component" />
-        </div>
+        </n-card>
       </n-col>
     </n-row>
   </n-space>

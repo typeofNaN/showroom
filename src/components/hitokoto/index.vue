@@ -1,5 +1,5 @@
 <template>
-  <n-card :bordered="false">
+  <n-card :bordered="false" class="h-full">
     <template #header>
       <div class="flex items-center">
         <svg-icon local-icon="topic" />
