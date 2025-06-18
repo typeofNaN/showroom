@@ -1,10 +1,14 @@
 <template>
   <div class="container-box">
     <div class="content">
-      <img v-for="i in 7" :key="i" :src="'https://picsum.photos/600/600?t=' + i" alt="" />
+      <img v-for="i in 7" :key="i" :src="getPicsumUrl(600, 600, 't') + i" alt="" />
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+import { getPicsumUrl } from '@/utils/common/picsum'
+</script>
 
 <style lang="scss" scoped>
 .container-box {
