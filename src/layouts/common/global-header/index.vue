@@ -19,7 +19,7 @@
   </dark-mode-container>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { useThemeStore } from '@/store'
 import { useBasicLayout } from '@/composables'
 import GlobalLogo from '../global-logo/index.vue'

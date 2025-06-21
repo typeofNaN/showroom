@@ -22,7 +22,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { computed, type Component } from 'vue'
 
 import { loginModuleLabels } from '@/constants'

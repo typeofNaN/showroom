@@ -6,7 +6,7 @@
     <n-form-item path="code">
       <div class="flex-y-center w-full">
         <n-input v-model:value="model.code" :placeholder="$t('page.login.common.codePlaceholder')" />
-        <div class="w-18px" /> 
+        <div class="w-18px" />
         <n-button size="large" :disabled="isCounting" :loading="smsLoading" @click="handleSmsCode">
           {{ label }}
         </n-button>
@@ -23,7 +23,7 @@
   </n-form>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { reactive, ref } from 'vue'
 import type { FormInst } from 'naive-ui'
 

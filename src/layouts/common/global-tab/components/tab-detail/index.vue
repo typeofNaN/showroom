@@ -15,7 +15,7 @@
     :y="dropdown.y" @update:visible="handleDropdownVisible" />
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import {
   computed,
   nextTick,

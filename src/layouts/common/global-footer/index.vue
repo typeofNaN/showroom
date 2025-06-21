@@ -4,7 +4,7 @@
   </dark-mode-container>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { useThemeStore } from '@/store'
 
 defineOptions({ name: 'GlobalFooter' })
