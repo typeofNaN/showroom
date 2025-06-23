@@ -2,6 +2,18 @@
   "name": "showroom",
   "version": "0.0.1",
   "description": "showroom",
+  "author": {
+    "name": "typeofNaN",
+    "url": "https://github.com/typeofNaN",
+    "email": "dmdefine6@gmail.com"
+  },
+  "homepage": "https://github.com/typeofNaN/showroom",
+  "repository": {
+    "url": "https://github.com/typeofNaN/showroom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typeofNaN/showroom/issues"
+  },
   "keywords": [
     "Vue",
     "Vue3",
