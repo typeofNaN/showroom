@@ -353,6 +353,10 @@ declare namespace I18nType {
       }
       yes: string
       no: string
+      fullScreen: string
+      exitFullScreen: string
+      themeMode: string
+      themeConfig: string
     }
     routes: {
       dashboard: {

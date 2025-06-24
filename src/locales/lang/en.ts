@@ -44,7 +44,11 @@ const locale: I18nType.Schema = {
       fail: 'Download fail!'
     },
     yes: 'Yes',
-    no: 'No'
+    no: 'No',
+    fullScreen: 'Full Screen',
+    exitFullScreen: 'Exit Full Screen',
+    themeMode: 'Theme Mode',
+    themeConfig: 'Theme Config'
   },
   routes: {
     dashboard: {

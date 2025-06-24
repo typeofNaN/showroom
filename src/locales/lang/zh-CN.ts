@@ -44,7 +44,11 @@ const locale: I18nType.Schema = {
       fail: '下载失败！'
     },
     yes: '是',
-    no: '否'
+    no: '否',
+    fullScreen: '全屏',
+    exitFullScreen: '退出全屏',
+    themeMode: '主题模式',
+    themeConfig: '主题配置'
   },
   routes: {
     dashboard: {
