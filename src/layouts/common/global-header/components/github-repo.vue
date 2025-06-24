@@ -5,12 +5,12 @@
 </template>
 
 <script lang="ts" setup>
-import { GithubRepoUrl } from '@/constants/github'
 import { useThemeStore } from '@/store'
+import packageJson from '~/package.json'
 
 const theme = useThemeStore()
 
 function toGithub() {
-  window.open(GithubRepoUrl, '_blank')
+  window.open(packageJson.homepage, '_blank')
 }
 </script>
