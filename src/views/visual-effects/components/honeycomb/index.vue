@@ -1,13 +1,13 @@
 <template>
   <div class="container-box">
     <div class="content">
-      <img v-for="i in 7" :key="i" :src="getPicsumUrl(600, 600, 't') + i" alt="" />
+      <img v-for="i in 7" :key="i" :src="PicsumImage.randomImage(600, 600, true)" alt="" />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { getPicsumUrl } from '@/utils/common/picsum'
+import { PicsumImage } from 'picsum-image'
 </script>
 
 <style lang="scss" scoped>

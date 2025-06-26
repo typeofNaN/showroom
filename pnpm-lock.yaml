@@ -50,6 +50,9 @@ importers:
       naive-ui:
         specifier: 2.34.4
         version: 2.34.4(vue@3.3.4)
+      picsum-image:
+        specifier: ^1.0.0
+        version: 1.0.0
       pinia:
         specifier: 2.1.6
         version: 2.1.6(typescript@5.2.2)(vue@3.3.4)
@@ -3550,6 +3553,9 @@ packages:
   picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
+
+  picsum-image@1.0.0:
+    resolution: {integrity: sha512-UKlamH8SONcb9G2MnYrx3ZsQVOapWz95h453W76KvVksJkUm5jTTmYmXJfyYk78vgLe/tNKCKtOsNE9a4MV1rg==}
 
   pidtree@0.6.0:
     resolution: {integrity: sha512-eG2dWTVw5bzqGRztnHExczNxt5VGsE6OwTeCG3fdUf9KBsZzO3R5OIIIzWR+iZA0NtZ+RDVdaoE2dK1cn6jH4g==}
@@ -8590,6 +8596,8 @@ snapshots:
   picocolors@1.0.0: {}
 
   picomatch@2.3.1: {}
+
+  picsum-image@1.0.0: {}
 
   pidtree@0.6.0: {}
 
