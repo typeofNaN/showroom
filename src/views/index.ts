@@ -1,4 +1,4 @@
-import type { RouteComponent } from 'vue-router';
+import type { RouteComponent } from 'vue-router'
 
 export const views: Record<
   PageRoute.LastDegreeRouteKey,
@@ -27,4 +27,4 @@ export const views: Record<
   plugin_ppt: () => import('./plugin/ppt/index.vue'),
   plugin_typewriter: () => import('./plugin/typewriter/index.vue'),
   'visual-effects': () => import('./visual-effects/index.vue')
-};
+}

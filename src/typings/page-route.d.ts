@@ -3,13 +3,13 @@ declare namespace PageRoute {
    * the root route key
    * @translate 根路由
    */
-  type RootRouteKey = 'root';
+  type RootRouteKey = 'root'
 
   /**
    * the not found route, which catch the invalid route path
    * @translate 未找到路由(捕获无效路径的路由)
    */
-  type NotFoundRouteKey = 'not-found';
+  type NotFoundRouteKey = 'not-found'
 
   /**
    * the route key
@@ -42,7 +42,7 @@ declare namespace PageRoute {
     | 'plugin_pinyin'
     | 'plugin_ppt'
     | 'plugin_typewriter'
-    | 'visual-effects';
+    | 'visual-effects'
 
   /**
    * last degree route key, which has the page file
@@ -73,5 +73,5 @@ declare namespace PageRoute {
     | 'plugin_ppt'
     | 'plugin_typewriter'
     | 'visual-effects'
-  >;
+  >
 }
