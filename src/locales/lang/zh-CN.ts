@@ -4,7 +4,7 @@ const locale: I18nType.Schema = {
     updateTitle: '系统版本更新通知',
     updateContent: '检测到系统有新版本发布，是否立即刷新页面？',
     updateConfirm: '立即刷新',
-    updateCancel: '稍后再说'
+    updateCancel: '稍后再说',
   },
   common: {
     success: '成功',
@@ -37,25 +37,25 @@ const locale: I18nType.Schema = {
     copy: {
       browserNotSupportedCopy: '您的浏览器不支持复制功能，请更换浏览器后重试！',
       copySuccess: '复制成功！',
-      copyFail: '复制失败！'
+      copyFail: '复制失败！',
     },
     download: {
       success: '下载成功！',
-      fail: '下载失败！'
+      fail: '下载失败！',
     },
     yes: '是',
     no: '否',
     fullScreen: '全屏',
     exitFullScreen: '退出全屏',
     themeMode: '主题模式',
-    themeConfig: '主题配置'
+    themeConfig: '主题配置',
   },
   routes: {
     dashboard: {
-      _value: '仪表盘'
+      _value: '仪表盘',
     },
     visualEffects: {
-      _value: '视觉特效'
+      _value: '视觉特效',
     },
     canvas: {
       _value: 'Canvas',
@@ -64,29 +64,32 @@ const locale: I18nType.Schema = {
       dynamicClock: '动态时钟',
       drawOfficialSeal: '画公章',
       gobang: '五子棋',
-      scratchCard: '刮刮乐'
+      scratchCard: '刮刮乐',
     },
     github: {
       _value: 'Github',
       emojis: 'Github表情',
-      codeAnalysis: '代码分析'
+      codeAnalysis: '代码分析',
     },
     ai: {
       _value: 'AI',
-      facialRecognition: '人脸识别'
+      facialRecognition: '人脸识别',
+      imageClassification: '图像分类',
+      textRecognition: '文字识别',
+      handLandmarks: '手部关键点',
     },
     plugin: {
       _value: '插件',
       ppt: '幻灯片',
       typewriter: '打字机',
-      pinyin: '拼音'
+      pinyin: '拼音',
     },
     exception: {
       _value: '异常页',
       403: '403',
       404: '404',
-      500: '500'
-    }
+      500: '500',
+    },
   },
   layout: {
     settingDrawer: {
@@ -102,7 +105,7 @@ const locale: I18nType.Schema = {
       scrollMode: '滚动模式',
       scrollModeList: {
         wrapper: '外层滚动',
-        content: '主体滚动'
+        content: '主体滚动',
       },
       fixedHeaderAndTab: '固定头部和多页签',
       header: {
@@ -110,8 +113,8 @@ const locale: I18nType.Schema = {
         height: '头部高度',
         crumb: {
           visible: '面包屑',
-          icon: '面包屑图标'
-        }
+          icon: '面包屑图标',
+        },
       },
       tab: {
         visible: '多页签',
@@ -119,28 +122,28 @@ const locale: I18nType.Schema = {
         modeList: {
           mode: '多页签风格',
           chrome: '谷歌风格',
-          button: '按钮风格'
+          button: '按钮风格',
         },
-        isCache: '多页签缓存'
+        isCache: '多页签缓存',
       },
       sider: {
         inverted: '侧边栏深色',
         width: '侧边栏展开宽度',
-        mixWidth: '左侧混合侧边栏展开宽度'
+        mixWidth: '左侧混合侧边栏展开宽度',
       },
       menu: {
         horizontalPosition: '顶部菜单位置',
         horizontalPositionList: {
           flexStart: '居左',
           center: '居中',
-          flexEnd: '居右'
-        }
+          flexEnd: '居右',
+        },
       },
       footer: {
         inverted: '底部深色',
         visible: '显示底部',
         fixed: '固定底部',
-        right: '底部居右'
+        right: '底部居右',
       },
       page: {
         animate: '页面切换动画',
@@ -151,11 +154,11 @@ const locale: I18nType.Schema = {
           fadeSlide: '滑动',
           fade: '消退',
           fadeBottom: '底部消退',
-          fadeScale: '缩放消退'
-        }
+          fadeScale: '缩放消退',
+        },
       },
       systemTheme: {
-        moreColors: '更多颜色'
+        moreColors: '更多颜色',
       },
       themeConfiguration: {
         title: '主题配置',
@@ -164,16 +167,105 @@ const locale: I18nType.Schema = {
         resetSuccess: '已重置配置，请重新拷贝！',
         operateSuccess: '操作成功',
         copySuccess: '复制成功,请替换 src/settings/theme.json的内容！',
-        confirmCopy: '确认'
-      }
-    }
+        confirmCopy: '确认',
+      },
+    },
   },
   page: {
     dashboard: {
-      hitokoto: '每日一言'
+      hitokoto: '每日一言',
     },
     visualEffects: {
-      honeycombLayout: '蜂巢布局'
+      honeycombLayout: '蜂巢布局',
+    },
+    ai: {
+      common: {
+        modelReady: '模型已就绪',
+        modelLoading: '模型加载中',
+        modelLoadFailed: '模型加载失败',
+        waitingForLoad: '等待加载',
+        selectImage: '选择图片',
+        startRecognition: '开始识别',
+        invalidImage: '请选择有效的图片文件',
+        recognitionFailed: '识别失败：{message}',
+        modelLoadError: '模型加载失败：{message}',
+        cameraUnavailable: '无法使用摄像头：{message}',
+        detectionFailed: '检测失败：{message}',
+        startCamera: '启动摄像头',
+        stopDetection: '停止检测',
+        controlPanel: '控制台',
+        retryModel: '重新加载模型',
+        live: '实时',
+      },
+      imageClassification: {
+        title: '图像分类',
+        imageAlt: '待分类图片',
+        uploadTip: '选择一张图片，让 MobileNet 识别其中的物体',
+        resultTitle: '识别结果',
+        emptyResult: '识别结果会显示在这里',
+        noResult: '模型没有返回可用的分类结果',
+        privacyTip:
+          '模型：MobileNet v2 / TensorFlow.js。推理在浏览器本地完成，图片不会上传。',
+      },
+      textRecognition: {
+        title: '图片文字识别',
+        imageAlt: '待识别图片',
+        uploadTip: '支持中英文印刷体图片，清晰截图效果最佳',
+        resultTitle: '识别文本',
+        copy: '复制',
+        placeholder: '识别结果会显示在这里，你可以继续编辑',
+        language: '语言：简体中文 + English',
+        characterCount: '{count} 字符',
+        privacyTip:
+          '由 Tesseract.js 在浏览器本地识别，首次使用需要加载语言模型。',
+        noText: '没有识别到文字，请尝试更清晰的图片',
+        copySuccess: '识别文本已复制',
+        copyFailed: '复制失败，请手动选择文本',
+        progress: {
+          preparing: '正在准备识别',
+          loadingEngine: '正在加载识别引擎',
+          initializingEngine: '正在初始化识别引擎',
+          loadingLanguage: '正在加载语言模型',
+          initializingLanguage: '正在初始化语言模型',
+          recognizing: '正在识别文字',
+          completed: '识别完成',
+        },
+      },
+      handLandmarks: {
+        title: '实时手部关键点',
+        subtitle: '启动摄像头后，将手掌放入画面中',
+        resultTitle: '检测结果',
+        emptyResult: '尚未检测到手部',
+        landmarkCount: '21 个关键点',
+        leftHand: '左手',
+        rightHand: '右手',
+        unknownHand: '未识别',
+        privacyTip:
+          '由 MediaPipe Hand Landmarker 驱动，最多同时追踪 2 只手，视频不会离开本机。',
+      },
+      facialRecognition: {
+        title: '实时人脸分析',
+        subtitle: '检测关键点、表情、年龄与性别估计',
+        resultTitle: '实时分析',
+        emptyResult: '尚未检测到人脸',
+        faceNumber: '人脸 {index}',
+        ageGender: '{gender} · {age} 岁',
+        dominantExpression: '主要表情',
+        male: '男',
+        female: '女',
+        unknown: '未知',
+        privacyTip:
+          '由 face-api.js 驱动。年龄、性别和表情仅为模型估计，不应用于身份或重要决策。',
+        expressions: {
+          neutral: '平静',
+          happy: '开心',
+          sad: '难过',
+          angry: '生气',
+          fearful: '害怕',
+          disgusted: '厌恶',
+          surprised: '惊讶',
+        },
+      },
     },
     canvas: {
       drawOfficialSeal: {
@@ -184,8 +276,8 @@ const locale: I18nType.Schema = {
         sealNamePlaceholder: '请输入公章名',
         sealNameValidTip: '请输入公章名',
         createSeal: '生成公章',
-        downloadSeal: '下载公章'
-      }
+        downloadSeal: '下载公章',
+      },
     },
     login: {
       common: {
@@ -199,7 +291,7 @@ const locale: I18nType.Schema = {
         back: '返回',
         validateSuccess: '验证成功',
         loginSuccess: '登录成功',
-        welcomeBack: '欢迎回来，{userName}!'
+        welcomeBack: '欢迎回来，{userName}!',
       },
       pwdLogin: {
         title: '密码登录',
@@ -210,27 +302,27 @@ const locale: I18nType.Schema = {
         otherLoginMode: '其他登录方式',
         superAdmin: '超级管理员',
         admin: '管理员',
-        user: '普通用户'
+        user: '普通用户',
       },
       codeLogin: {
         title: '验证码登录',
         getCode: '获取验证码',
-        imageCodePlaceholder: '请输入图片验证码'
+        imageCodePlaceholder: '请输入图片验证码',
       },
       register: {
         title: '注册账号',
         agreement: '我已经仔细阅读并接受',
         protocol: '《用户协议》',
-        policy: '《隐私权政策》'
+        policy: '《隐私权政策》',
       },
       resetPwd: {
-        title: '重置密码'
+        title: '重置密码',
       },
       bindWeChat: {
-        title: '绑定微信'
-      }
-    }
-  }
+        title: '绑定微信',
+      },
+    },
+  },
 }
 
 export default locale

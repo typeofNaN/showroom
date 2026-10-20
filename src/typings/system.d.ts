@@ -50,14 +50,17 @@ declare namespace Service {
   type RequestResult<T = any> = SuccessResult<T> | FailedResult
 
   /** 多个请求数据结果 */
-  type MultiRequestResult<T extends any[]> = T extends [infer First, ...infer Rest]
+  type MultiRequestResult<T extends any[]> = T extends [
+    infer First,
+    ...infer Rest,
+  ]
     ? [First] extends [any]
-    ? Rest extends any[]
-    ? [Service.RequestResult<First>, ...MultiRequestResult<Rest>]
-    : [Service.RequestResult<First>]
-    : Rest extends any[]
-    ? MultiRequestResult<Rest>
-    : []
+      ? Rest extends any[]
+        ? [Service.RequestResult<First>, ...MultiRequestResult<Rest>]
+        : [Service.RequestResult<First>]
+      : Rest extends any[]
+      ? MultiRequestResult<Rest>
+      : []
     : []
 
   /** 请求结果的适配器函数 */
@@ -256,12 +259,17 @@ declare namespace App {
     hasChildren: boolean
     icon?: import('vue').Component
     i18nTitle?: I18nType.I18nKey
-    options?: (import('naive-ui/es/dropdown/src/interface').DropdownMixedOption & { i18nTitle?: I18nType.I18nKey })[]
+    options?: (import('naive-ui/es/dropdown/src/interface').DropdownMixedOption & {
+      i18nTitle?: I18nType.I18nKey
+    })[]
   }
 
   /** 多页签Tab的路由 */
   interface GlobalTabRoute
-    extends Pick<import('vue-router').RouteLocationNormalizedLoaded, 'name' | 'fullPath' | 'meta'> {
+    extends Pick<
+      import('vue-router').RouteLocationNormalizedLoaded,
+      'name' | 'fullPath' | 'meta'
+    > {
     /** 滚动的位置 */
     scrollPosition: {
       left: number
@@ -382,6 +390,9 @@ declare namespace I18nType {
       ai: {
         _value: string
         facialRecognition: string
+        imageClassification: string
+        textRecognition: string
+        handLandmarks: string
       }
       plugin: {
         _value: string
@@ -483,6 +494,91 @@ declare namespace I18nType {
       visualEffects: {
         honeycombLayout: string
       }
+      ai: {
+        common: {
+          modelReady: string
+          modelLoading: string
+          modelLoadFailed: string
+          waitingForLoad: string
+          selectImage: string
+          startRecognition: string
+          invalidImage: string
+          recognitionFailed: string
+          modelLoadError: string
+          cameraUnavailable: string
+          detectionFailed: string
+          startCamera: string
+          stopDetection: string
+          controlPanel: string
+          retryModel: string
+          live: string
+        }
+        imageClassification: {
+          title: string
+          imageAlt: string
+          uploadTip: string
+          resultTitle: string
+          emptyResult: string
+          noResult: string
+          privacyTip: string
+        }
+        textRecognition: {
+          title: string
+          imageAlt: string
+          uploadTip: string
+          resultTitle: string
+          copy: string
+          placeholder: string
+          language: string
+          characterCount: string
+          privacyTip: string
+          noText: string
+          copySuccess: string
+          copyFailed: string
+          progress: {
+            preparing: string
+            loadingEngine: string
+            initializingEngine: string
+            loadingLanguage: string
+            initializingLanguage: string
+            recognizing: string
+            completed: string
+          }
+        }
+        handLandmarks: {
+          title: string
+          subtitle: string
+          resultTitle: string
+          emptyResult: string
+          landmarkCount: string
+          leftHand: string
+          rightHand: string
+          unknownHand: string
+          privacyTip: string
+        }
+        facialRecognition: {
+          title: string
+          subtitle: string
+          resultTitle: string
+          emptyResult: string
+          faceNumber: string
+          ageGender: string
+          dominantExpression: string
+          male: string
+          female: string
+          unknown: string
+          privacyTip: string
+          expressions: {
+            neutral: string
+            happy: string
+            sad: string
+            angry: string
+            fearful: string
+            disgusted: string
+            surprised: string
+          }
+        }
+      }
       canvas: {
         drawOfficialSeal: {
           companyNameLabel: string
@@ -541,10 +637,13 @@ declare namespace I18nType {
     }
   }
 
-  type GetI18nKey<T extends Record<string, unknown>, K extends keyof T = keyof T> = K extends string
+  type GetI18nKey<
+    T extends Record<string, unknown>,
+    K extends keyof T = keyof T,
+  > = K extends string
     ? T[K] extends Record<string, unknown>
-    ? `${K}.${GetI18nKey<T[K]>}`
-    : K
+      ? `${K}.${GetI18nKey<T[K]>}`
+      : K
     : never
 
   type I18nKey = GetI18nKey<Schema>

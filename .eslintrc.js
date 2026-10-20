@@ -19,6 +19,18 @@ module.exports = {
     'import/core-modules': ['uno.css', '~icons/*', 'virtual:svg-icons-register']
   },
   rules: {
+    'prettier/prettier': [
+      'error',
+      {
+        semi: false,
+        singleQuote: true,
+        tabWidth: 2,
+        useTabs: false,
+        printWidth: 120,
+        trailingComma: 'none',
+        arrowParens: 'avoid'
+      }
+    ],
     'import/order': [
       'error',
       {

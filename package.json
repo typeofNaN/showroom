@@ -36,6 +36,7 @@
     "build:vercel": "cross-env VITE_HASH_ROUTE=Y VITE_VERCEL=Y vite build",
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit --skipLibCheck",
+    "test": "vitest run",
     "lint": "eslint . --fix",
     "format": "soy prettier-write",
     "commit": "soy git-commit",
@@ -46,7 +47,10 @@
   },
   "dependencies": {
     "@better-scroll/core": "2.5.1",
+    "@mediapipe/tasks-vision": "^1.1.1",
     "@soybeanjs/vue-materials": "0.2.0",
+    "@tensorflow-models/mobilenet": "^2.1.1",
+    "@tensorflow/tfjs": "^4.22.0",
     "@vueuse/core": "10.4.1",
     "axios": "1.5.0",
     "clipboard": "2.0.11",
@@ -64,6 +68,7 @@
     "pinyin-pro": "^3.26.0",
     "qs": "6.11.2",
     "reveal.js": "^5.2.1",
+    "tesseract.js": "^7.0.0",
     "typeit": "^8.8.7",
     "ua-parser-js": "1.0.36",
     "vue": "3.3.4",
@@ -99,6 +104,7 @@
     "vite-plugin-mock": "2.9.8",
     "vite-plugin-svg-icons": "2.0.1",
     "vite-plugin-vue-devtools": "1.0.0-rc.4",
+    "vitest": "0.34.6",
     "vue-tsc": "1.8.13"
   }
 }

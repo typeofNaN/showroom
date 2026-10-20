@@ -2,9 +2,10 @@ const locale: I18nType.Schema = {
   system: {
     title: 'Showroom',
     updateTitle: 'System Version Update Notification',
-    updateContent: 'A new version of the system has been detected. Do you want to refresh the page immediately?',
+    updateContent:
+      'A new version of the system has been detected. Do you want to refresh the page immediately?',
     updateConfirm: 'Refresh immediately',
-    updateCancel: 'Later'
+    updateCancel: 'Later',
   },
   common: {
     success: 'Success',
@@ -35,27 +36,28 @@ const locale: I18nType.Schema = {
     pleaseInputSearchValue: 'Please enter the search value',
     noData: 'Data is Empty',
     copy: {
-      browserNotSupportedCopy: 'Your browser not support copy, please change browser and try again!',
+      browserNotSupportedCopy:
+        'Your browser not support copy, please change browser and try again!',
       copySuccess: 'Copy success!',
-      copyFail: 'Copy fail!'
+      copyFail: 'Copy fail!',
     },
     download: {
       success: 'Download Success!',
-      fail: 'Download fail!'
+      fail: 'Download fail!',
     },
     yes: 'Yes',
     no: 'No',
     fullScreen: 'Full Screen',
     exitFullScreen: 'Exit Full Screen',
     themeMode: 'Theme Mode',
-    themeConfig: 'Theme Config'
+    themeConfig: 'Theme Config',
   },
   routes: {
     dashboard: {
-      _value: 'Dashboard'
+      _value: 'Dashboard',
     },
     visualEffects: {
-      _value: 'Visual Effects'
+      _value: 'Visual Effects',
     },
     canvas: {
       _value: 'Canvas',
@@ -64,29 +66,32 @@ const locale: I18nType.Schema = {
       dynamicClock: 'Dynamic Clock',
       drawOfficialSeal: 'Draw official Seal',
       gobang: 'Gobang',
-      scratchCard: 'Scratch Card'
+      scratchCard: 'Scratch Card',
     },
     github: {
       _value: 'Github',
       emojis: 'Github Emojis',
-      codeAnalysis: 'Code Analysis'
+      codeAnalysis: 'Code Analysis',
     },
     ai: {
       _value: 'AI',
-      facialRecognition: 'Facial Recognition'
+      facialRecognition: 'Facial Recognition',
+      imageClassification: 'Image Classification',
+      textRecognition: 'Text Recognition',
+      handLandmarks: 'Hand Landmarks',
     },
     plugin: {
       _value: 'Plugin',
       ppt: 'PPT',
       typewriter: 'Typewriter',
-      pinyin: 'Pin Yin'
+      pinyin: 'Pin Yin',
     },
     exception: {
       _value: 'Exception',
       403: '403',
       404: '404',
-      500: '500'
-    }
+      500: '500',
+    },
   },
   layout: {
     settingDrawer: {
@@ -102,7 +107,7 @@ const locale: I18nType.Schema = {
       scrollMode: 'scrollMode',
       scrollModeList: {
         wrapper: 'Outer layer scroll',
-        content: 'Main body scroll'
+        content: 'Main body scroll',
       },
       fixedHeaderAndTab: 'Fixed header and multiple tabs',
       header: {
@@ -110,8 +115,8 @@ const locale: I18nType.Schema = {
         height: 'Head Height',
         crumb: {
           visible: 'Crumb',
-          icon: 'Crumb icon'
-        }
+          icon: 'Crumb icon',
+        },
       },
       tab: {
         visible: 'Multi-page tab',
@@ -119,28 +124,28 @@ const locale: I18nType.Schema = {
         modeList: {
           mode: 'Multi-tab style',
           chrome: 'Google style',
-          button: 'Button style'
+          button: 'Button style',
         },
-        isCache: 'Multiple tab caching'
+        isCache: 'Multiple tab caching',
       },
       sider: {
         inverted: 'Dark sidebar',
         width: 'Sidebar expanded width',
-        mixWidth: 'Left hybrid sidebar expanded width'
+        mixWidth: 'Left hybrid sidebar expanded width',
       },
       menu: {
         horizontalPosition: 'Top menu position',
         horizontalPositionList: {
           flexStart: 'Right',
           center: 'center',
-          flexEnd: 'Left'
-        }
+          flexEnd: 'Left',
+        },
       },
       footer: {
         inverted: 'Dark bottom',
         visible: 'Show bottom',
         fixed: 'Fixed bottom',
-        right: 'Bottom to the right'
+        right: 'Bottom to the right',
       },
       page: {
         animate: 'switch animation',
@@ -151,11 +156,11 @@ const locale: I18nType.Schema = {
           fadeSlide: 'Slide',
           fade: 'Fade away',
           fadeBottom: 'Bottom fade',
-          fadeScale: 'Resizing fade away'
-        }
+          fadeScale: 'Resizing fade away',
+        },
       },
       systemTheme: {
-        moreColors: 'More colors'
+        moreColors: 'More colors',
       },
       themeConfiguration: {
         title: 'Theme configuration',
@@ -163,17 +168,108 @@ const locale: I18nType.Schema = {
         reset: 'Reset the current configuration',
         resetSuccess: 'The configuration has been reset, please copy it again!',
         operateSuccess: 'Successful operation',
-        copySuccess: 'Copy success, please replace the content of src/settings/theme.json!',
-        confirmCopy: 'Confirm'
-      }
-    }
+        copySuccess:
+          'Copy success, please replace the content of src/settings/theme.json!',
+        confirmCopy: 'Confirm',
+      },
+    },
   },
   page: {
     dashboard: {
-      hitokoto: 'Hitokoto'
+      hitokoto: 'Hitokoto',
     },
     visualEffects: {
-      honeycombLayout: 'Honeycomb Layout'
+      honeycombLayout: 'Honeycomb Layout',
+    },
+    ai: {
+      common: {
+        modelReady: 'Model ready',
+        modelLoading: 'Loading model',
+        modelLoadFailed: 'Model failed to load',
+        waitingForLoad: 'Waiting to load',
+        selectImage: 'Select image',
+        startRecognition: 'Start recognition',
+        invalidImage: 'Please select a valid image file',
+        recognitionFailed: 'Recognition failed: {message}',
+        modelLoadError: 'Model failed to load: {message}',
+        cameraUnavailable: 'Unable to access camera: {message}',
+        detectionFailed: 'Detection failed: {message}',
+        startCamera: 'Start camera',
+        stopDetection: 'Stop detection',
+        controlPanel: 'Controls',
+        retryModel: 'Reload model',
+        live: 'LIVE',
+      },
+      imageClassification: {
+        title: 'Image Classification',
+        imageAlt: 'Image to classify',
+        uploadTip: 'Select an image and let MobileNet identify its contents',
+        resultTitle: 'Results',
+        emptyResult: 'Recognition results will appear here',
+        noResult: 'The model did not return any usable predictions',
+        privacyTip:
+          'Model: MobileNet v2 / TensorFlow.js. Inference runs locally and your image is never uploaded.',
+      },
+      textRecognition: {
+        title: 'Image Text Recognition',
+        imageAlt: 'Image to recognize',
+        uploadTip:
+          'Supports printed Chinese and English; clear screenshots work best',
+        resultTitle: 'Recognized Text',
+        copy: 'Copy',
+        placeholder: 'Recognized text will appear here and can be edited',
+        language: 'Languages: Simplified Chinese + English',
+        characterCount: '{count} characters',
+        privacyTip:
+          'Recognition runs locally with Tesseract.js. Language data is downloaded on first use.',
+        noText: 'No text was recognized. Please try a clearer image.',
+        copySuccess: 'Recognized text copied',
+        copyFailed: 'Copy failed. Please select the text manually.',
+        progress: {
+          preparing: 'Preparing recognition',
+          loadingEngine: 'Loading recognition engine',
+          initializingEngine: 'Initializing recognition engine',
+          loadingLanguage: 'Loading language model',
+          initializingLanguage: 'Initializing language model',
+          recognizing: 'Recognizing text',
+          completed: 'Recognition complete',
+        },
+      },
+      handLandmarks: {
+        title: 'Real-time Hand Landmarks',
+        subtitle: 'Start the camera and place your hand in the frame',
+        resultTitle: 'Detection Results',
+        emptyResult: 'No hands detected',
+        landmarkCount: '21 landmarks',
+        leftHand: 'Left hand',
+        rightHand: 'Right hand',
+        unknownHand: 'Unknown hand',
+        privacyTip:
+          'Powered by MediaPipe Hand Landmarker. Tracks up to 2 hands and keeps video on this device.',
+      },
+      facialRecognition: {
+        title: 'Real-time Face Analysis',
+        subtitle: 'Detect landmarks and estimate expression, age, and gender',
+        resultTitle: 'Live Analysis',
+        emptyResult: 'No faces detected',
+        faceNumber: 'Face {index}',
+        ageGender: '{gender} · {age} years',
+        dominantExpression: 'Top expression',
+        male: 'Male',
+        female: 'Female',
+        unknown: 'Unknown',
+        privacyTip:
+          'Powered by face-api.js. Age, gender, and expression are estimates and must not be used for identity or important decisions.',
+        expressions: {
+          neutral: 'Neutral',
+          happy: 'Happy',
+          sad: 'Sad',
+          angry: 'Angry',
+          fearful: 'Fearful',
+          disgusted: 'Disgusted',
+          surprised: 'Surprised',
+        },
+      },
     },
     canvas: {
       drawOfficialSeal: {
@@ -184,8 +280,8 @@ const locale: I18nType.Schema = {
         sealNamePlaceholder: 'Please Input Seal Name',
         sealNameValidTip: 'Please Input Seal Name',
         createSeal: 'Create Seal',
-        downloadSeal: 'Download Seal'
-      }
+        downloadSeal: 'Download Seal',
+      },
     },
     login: {
       common: {
@@ -199,7 +295,7 @@ const locale: I18nType.Schema = {
         back: 'Back',
         validateSuccess: 'Verification passed',
         loginSuccess: 'Login success',
-        welcomeBack: 'Welcome back, {userName}!'
+        welcomeBack: 'Welcome back, {userName}!',
       },
       pwdLogin: {
         title: 'Password Login',
@@ -210,27 +306,27 @@ const locale: I18nType.Schema = {
         otherLoginMode: 'Other Login Mode',
         superAdmin: 'Super Administrator',
         admin: 'Administrator',
-        user: 'Ordinary User'
+        user: 'Ordinary User',
       },
       codeLogin: {
         title: 'Verification Code Login',
         getCode: 'Get verification code',
-        imageCodePlaceholder: 'Please enter image verification code'
+        imageCodePlaceholder: 'Please enter image verification code',
       },
       register: {
         title: 'Register Account',
         agreement: 'I have read and agree to',
         protocol: '《User Agreement》',
-        policy: '《Privacy Policy》'
+        policy: '《Privacy Policy》',
       },
       resetPwd: {
-        title: 'Reset Password'
+        title: 'Reset Password',
       },
       bindWeChat: {
-        title: 'Bind WeChat'
-      }
-    }
-  }
+        title: 'Bind WeChat',
+      },
+    },
+  },
 }
 
 export default locale
